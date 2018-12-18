@@ -19,7 +19,7 @@
 	window.wxappsecret = '149cdef95c99ff7cab523d8beca86080';
 
 	
-	window.desc = '新华国际送您一张习主席“金句”明信片';
+	window.desc = document.title;
 	document.addEventListener('touchmove', function (e) {
 		e.preventDefault()
 	}, {
@@ -67,7 +67,7 @@
 			});
 		}
 	</script>
-	<script src="//openapi.zhongguowan//openapi.zhongguowagshi.com/wxHandler.ashx?callback=wxHandlercallback&action=getWeixinConfig&debug=1&site=xhsh5"></script>
+	<script src="//openapi.zhongguowangshi.com/wxHandler.ashx?callback=wxHandlercallback&action=getWeixinConfig&debug=1&site=xhsh5"></script>
 	<script>
 		document.body.style.position='fixed'; //防止iframe页上下滚动时带动本页移动
 		document.body.style.position='static';//取消禁止滚动
@@ -78,15 +78,15 @@
 		}
 
 		/*
-		*/
 		loadScript('./assets/js/base.js');
 		loadScript('./assets/js/index.js');
+		*/
 	
 	</script>
 
-	<!-- 
 	<script src='./assets/js/base.js'></script>
 	<script src='http://localhost:4055/index.js' onerror="loadScript('./assets/js/index.js')"></script>
+	<!-- 
 	 -->
 </body>
 

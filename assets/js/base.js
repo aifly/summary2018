@@ -102,6 +102,7 @@ window.config = {
       date: "12月17日",
       likeCount: 200,
       commentCount: 300,
+      title:"40年，你可曾读懂父亲？",
       faces: new Array(15),
       commentList: [
         {
@@ -132,6 +133,7 @@ window.config = {
       likeCount: 200, //2
       commentCount: 300,
       faces: new Array(15),
+      title:"留声40年系列一 ",
       bannerList: [
         {
           img: imgs.liusheng1,
@@ -161,6 +163,7 @@ window.config = {
       likeCount: 200, //3
       commentCount: 300,
       faces: new Array(15),
+      title:"留声40年系列二",
       bannerList: [
         {
           img: imgs.gushi,
@@ -191,6 +194,8 @@ window.config = {
       likeCount: 200, //3
       commentCount: 300,
       faces: new Array(15),
+      title:"留声40年系列三",
+      subtitle:"（横向滑动）",
       bannerList: [
         {
           img: imgs.liusheng2,
@@ -269,6 +274,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "人民心愿 ",
       bannerList: [
         {
           img: imgs.rmxy,
@@ -294,12 +300,10 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:'历史从这里转身',
+      subtitle:"（横向滑动）",
+      subimg:imgs.lishi1,
       bannerList: [
-        {
-          img: imgs.lishi1,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/ah.htm",
-          title: "历史从这里转身"
-        },
         {
           img: imgs.lishi2,
           href: "http://www.xinhuanet.com/interview/c40nzgqj/ah.htm",
@@ -342,6 +346,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:'画一个圈圈',
       bannerList: [
         {
           img: imgs.yuanquan,
@@ -366,6 +371,7 @@ window.config = {
       date: "12月17日",
       likeCount: 200,
       commentCount: 300,
+      title:"一起来做短视频",
       faces: new Array(15),
       bannerList: [
         {
@@ -391,6 +397,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"框住你的心",
       bannerList: [
         {
           img: imgs.tongkuang,
@@ -419,6 +426,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:'40年40个“第一”',
       bannerList: [
         {
           img: imgs.suiyue,
@@ -439,6 +447,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:'"C1978"号航班即将起飞',
       bannerList: [
         {
           img: imgs.kaifang,
@@ -463,6 +472,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"1分钟里的40年",
       bannerList: [
         {
           img: imgs.dashuju,
@@ -486,6 +496,7 @@ window.config = {
       date: "12月17日", //10
       likeCount: 200,
       commentCount: 300,
+      title:"这些年，你变了……",
       faces: new Array(15),
       bannerList: [
         {
@@ -511,6 +522,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"令人心动的特殊物件",
       bannerList: [
         {
           img: imgs.teshuwujian,
@@ -536,6 +548,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"请回答2018",
       bannerList: [
         {
           img: imgs.haohio,
@@ -556,6 +569,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"与时代同框",
       bannerList: [
         {
           img: imgs.shidai,
@@ -580,6 +594,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"改革开放40年大事",
       bannerList: [
         {
           img: imgs.zhencang,
@@ -604,6 +619,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "来……来了！",
       bannerList: [
         {
           img: imgs.yifu,
@@ -627,6 +643,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "刘烨的大片",
       bannerList: [
         {
           img: imgs.liuye,
@@ -651,6 +668,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "穿越时光的照片",
       bannerList: [
         {
           img: imgs.chuanyue,
@@ -675,6 +693,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"你的表情可“斗”了",
       bannerList: [
         {
           img: imgs.doutu,
@@ -690,6 +709,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"改革开放40年",
       bannerList: [
         {
           img: imgs.gaigekaifang40,
@@ -704,6 +724,7 @@ window.config = {
       date: "12月17日", //20
       likeCount: 200,
       commentCount: 300,
+      title:"40年里的新鲜事物",
       faces: new Array(15),
       bannerList: [
         {
@@ -720,6 +741,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "这才是中国该有的动画！",
       bannerList: [
         {
           img: imgs.donghua,
@@ -735,6 +757,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "一起随着时间去旅行",
       bannerList: [
         {
           img: imgs.suoyouren,
@@ -750,6 +773,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "这就是1978的回答！",
       bannerList: [
         {
           img: imgs.huida,
@@ -764,6 +788,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "我们的一点心意",
       bannerList: [
         {
           img: imgs.jinian,
@@ -792,6 +817,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"寻找“你”“我”的故事",
       bannerList: [
         {
           img: imgs.luopan,
@@ -819,6 +845,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "这33米的风景，值得你好好看看",
       bannerList: [
         {
           img: imgs.fengjing,
@@ -847,6 +874,7 @@ window.config = {
       date: "12月17日", //27
       likeCount: 200,
       commentCount: 300,
+      title: "40年来最流行的那些衣服",
       faces: new Array(15),
       bannerList: [
         {
@@ -877,6 +905,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "两座城的眉眼怕你看不懂",
       bannerList: [
         {
           img: imgs.meiyan,
@@ -905,6 +934,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "一个字形容改革开放四十年",
       bannerList: [
         {
           img: imgs.yigezi,
@@ -933,6 +963,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "“国博内的走秀”见证改革开放",
       bannerList: [
         {
           img: imgs.zouxiu,
@@ -948,6 +979,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "噌！40秒40年 这里发生了什么？",
       bannerList: [
         {
           img: imgs.fasheng,
@@ -977,6 +1009,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "情·弦 草原歌声四十年",
       bannerList: [
         {
           img: imgs.chuangyi,
@@ -1005,6 +1038,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "见证丨40年，衣之变",
       bannerList: [
         {
           img: imgs.jianzheng,
@@ -1033,6 +1067,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "还记得“傻子瓜子”吗？",
       bannerList: [
         {
           img: imgs.shaziguazi,
@@ -1061,6 +1096,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "改变中国 影响世界的40年的数据视频",
       bannerList: [
         {
           img: imgs.gaibian,
@@ -1089,6 +1125,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "全球治理 中国方案",
       bannerList: [
         {
           img: imgs.fangan,
@@ -1104,6 +1141,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "跨越40年的民心见证",
       bannerList: [
         {
           img: imgs.kuayue,
@@ -1132,6 +1170,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "从改革开放40年看中国奇迹",
       bannerList: [
         {
           img: imgs.fengyu,
@@ -1160,6 +1199,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "习主席曾在这里这样说……",
       bannerList: [
         {
           img: imgs.guanyu,
@@ -1190,6 +1230,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "“第一动力”的时代答卷",
       bannerList: [
         {
           img: imgs.dajuan,
@@ -1205,6 +1246,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "有一个地方，让你边嗨边感动",
       bannerList: [
         {
           img: imgs.gandong,
@@ -1234,6 +1276,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "寻找40年里的我",
       bannerList: [
         {
           img: imgs.xunzhao,
@@ -1249,6 +1292,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "回顾改革开放40年",
       bannerList: [
         {
           img: imgs.huigu,
@@ -1263,6 +1307,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "漫说改革开放40年通讯工具变迁",
       bannerList: [
         {
           img: imgs.manshuo,
@@ -1277,6 +1322,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "帮个忙，请你@这个人",
       bannerList: [
         {
           img: imgs.bangmang,
@@ -1305,6 +1351,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title: "这里面一定有你的青春",
       bannerList: [
         {
           img: imgs.qingchun,
@@ -1332,6 +1379,7 @@ window.config = {
       likeCount: 200,
       commentCount: 300,
       faces: new Array(15),
+      title:"不拼爹，不拼颜值，我们一起拼年代",
       bannerList: [
         {
           img: imgs.pindie,

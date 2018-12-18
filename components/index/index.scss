@@ -114,11 +114,15 @@ $bgColor: #4081dd;
             text-align: center;
             color:$color;
             @include displayBox(horizontal);
-            margin: 20px auto;
+            margin: 80px auto 20px;
 
             & > div {
                 &:nth-of-type(2){
                     margin: 0 10px;
+                    span{
+
+                        font-size:20px;
+                    }
 
                 }
                 &:nth-of-type(1), &:nth-of-type(3) {
@@ -152,6 +156,9 @@ $bgColor: #4081dd;
             overflow: hidden;
             width: 720px;
             margin: 0 auto;
+            .zmiti-subimg{
+                margin-bottom:  10px;
+            }
             img{
                 width: 100%;
                 height: auto;
@@ -186,7 +193,18 @@ $bgColor: #4081dd;
             }
         }
     }
-
+    
+    .zmiti-copyright{
+        background:#005192;
+        font-size: 24px;
+        color:#fff;
+        text-align: center;
+        height: 60px;
+        line-height:60px;
+        @include pos(a);
+        bottom:0;
+        width: 100%;
+    }
     .zmiti-logo {
         @include pos(a);
 

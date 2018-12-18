@@ -2,9 +2,6 @@ import Vue from "vue";
 import './components/css/index.css';
 import Index from './components/index/index';
 import Music from './components/music/index';
-import Main from './components/main/index';
-import Upload from './components/upload/index';
-import Share from './components/share/index';
 import Obserable from './components/lib/obserable';
 import {
 	imgs
@@ -107,10 +104,6 @@ new Vue({
 	},
 	components: {
 		Index,
-		Music,
-		Main,
-		Upload,
-		Share,
 	},
 	mounted() {
 

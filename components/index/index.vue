@@ -8,25 +8,30 @@
 					</div>
 					<div class='zmiti-data-list'>
 						<div class='zmiti-list-item' v-for="(item,i) in dataList" :key="i">
-							<div class='zmiti-item-date' style="opacity:0;height:20px;border:1px solid red;overflow:hidden" v-if='false'>
+							<div class='zmiti-item-date' >
 								<div></div>
-								<div>{{item.date}}</div>
+								<div>{{item.title||item.bannerList[0].title}}<span>{{item.subtitle}}</span></div>
 								<div></div>
 							</div>
-							<div class='zmiti-banner-list' ref='banners' :class="{'zmiti-single':item.bannerList.length<=1}">
-								<ul :style="{width:item.bannerList.length<=1?'730px':item.bannerList.length*420+'px'}">
-									<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'730px':400+'px'}">
-										<a :href="banner.href">
-											<img :src="banner.img" alt="">
-											<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>
-												{{banner.content}}
-											</span>
-										</a>
-										<div class='zmiti-banner-item-mask'>
-											{{banner.title}}
-										</div>	
-									</li>
-								</ul>
+							<div class='zmiti-banner-list' :class="{'zmiti-single':item.bannerList.length<=1}">
+								<div v-if='item.subimg' class='zmiti-subimg'>
+									<img :src="item.subimg" alt="">
+								</div>
+								<div ref='banners'>
+									<ul :style="{width:item.bannerList.length<=1?'730px':item.bannerList.length*320+'px'}">
+										<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'730px':300+'px'}">
+											<a :href="banner.href">
+												<img :src="banner.img" alt="">
+												<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>
+													{{banner.content}}
+												</span>
+											</a>
+											<div class='zmiti-banner-item-mask'>
+												{{banner.title}}
+											</div>	
+										</li>
+									</ul>
+								</div>
 							</div>
 
 							<div class='zmiti-data-like-comment'>
@@ -51,7 +56,13 @@
 							</div>
 						</div>
 					</div>
+					<div class='zmiti-copyright'>
+						新华社新媒体中心出品
+					</div>
 				</div>
+			</div>
+			<div v-if='false'>
+				<iframe  :src="href" frameborder="0" class='lt-f'></iframe>
 			</div>
 		</div>
 	</transition>
@@ -71,6 +82,7 @@
 				imgs,
 				viewH:window.innerHeight,
 				count:0,
+				href:"",
 				show:true,
 				faces:[],
 				start:false,
@@ -121,7 +133,6 @@
 			setTimeout(() => {
 			
 				this.dataList.forEach((data,j)=>{
-					console.log(j)
 					for(var i = 0;i<15;i++){
 						data.faces[i] = (new Face({obj:this.$refs['face'][j*15+i]}))
 					}
@@ -141,7 +152,7 @@
 				this.start = true;
 				this.showIndex = true;
 
-				this.scorll.refresh();
+				
 				
 				this.$refs['banners'].forEach((banner,i)=>{
 					if(this.dataList[i].bannerList.length>1){
@@ -153,6 +164,14 @@
 				})
 
 			}, 1000);
+
+			var t = setInterval(()=>{
+				this.scorll.refresh();
+			},100);
+
+			setTimeout(()=>{
+				clearInterval(t);
+			},6000)
 
 		}
 	}
