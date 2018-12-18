@@ -116,9 +116,10 @@
       -webkit-box-orient: horizontal;
       margin: 80px auto 20px; }
       .zmiti-index-main-ui .zmiti-data-list .zmiti-item-date > div:nth-of-type(2) {
-        margin: 0 10px; }
+        margin: 0 10px;
+        font-size: 34px; }
         .zmiti-index-main-ui .zmiti-data-list .zmiti-item-date > div:nth-of-type(2) span {
-          font-size: 20px; }
+          font-size: 22px; }
       .zmiti-index-main-ui .zmiti-data-list .zmiti-item-date > div:nth-of-type(1), .zmiti-index-main-ui .zmiti-data-list .zmiti-item-date > div:nth-of-type(3) {
         position: relative;
         width: 100px;
