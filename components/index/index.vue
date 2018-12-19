@@ -44,7 +44,7 @@
 								</div>
 								<div>
 									<img :src="imgs.comment" alt="">
-									<span>{{item.commentCount}}</span>
+									<span></span>
 								</div>
 							</div>
 

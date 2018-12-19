@@ -62,11 +62,11 @@
 
 	var _componentsMusicIndex2 = _interopRequireDefault(_componentsMusicIndex);
 
-	var _componentsMainIndex = __webpack_require__(25);
+	var _componentsMainIndex = __webpack_require__(22);
 
 	var _componentsMainIndex2 = _interopRequireDefault(_componentsMainIndex);
 
-	var _componentsLibObserable = __webpack_require__(22);
+	var _componentsLibObserable = __webpack_require__(32);
 
 	var _componentsLibObserable2 = _interopRequireDefault(_componentsLibObserable);
 
@@ -78,9 +78,9 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	__webpack_require__(23);
+	__webpack_require__(33);
 
-	var _vueJsTap = __webpack_require__(24);
+	var _vueJsTap = __webpack_require__(34);
 
 	var _vueJsTap2 = _interopRequireDefault(_vueJsTap);
 
@@ -12029,7 +12029,7 @@
 	// 								</div>
 	// 								<div>
 	// 									<img :src="imgs.comment" alt="">
-	// 									<span>{{item.commentCount}}</span>
+	// 									<span></span>
 	// 								</div>
 	// 							</div>
 	//
@@ -24640,7 +24640,7 @@
 /* 18 */
 /***/ (function(module, exports) {
 
-	module.exports = "\r\n\t<transition name='index'>\r\n\t\t<div v-if='show' class=\"lt-full zmiti-index-main-ui \" >\r\n\t\t\t<div class='lt-full' ref='page' >\r\n\t\t\t\t<div style='padding-bottom:90px'>\r\n\t\t\t\t\t<div class='zmiti-banner'>\r\n\t\t\t\t\t\t<img :src=\"imgs.banner\" alt=\"\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='zmiti-data-list'>\r\n\t\t\t\t\t\t<div class='zmiti-list-item' v-for=\"(item,i) in dataList\" :key=\"i\">\r\n\t\t\t\t\t\t\t<div class='zmiti-item-date' >\r\n\t\t\t\t\t\t\t\t<div></div>\r\n\t\t\t\t\t\t\t\t<div>{{item.title||item.bannerList[0].title}}<span>{{item.subtitle}}</span></div>\r\n\t\t\t\t\t\t\t\t<div></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='zmiti-banner-list'>\r\n\t\t\t\t\t\t\t\t<div v-if='item.subimg' class='zmiti-subimg'>\r\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0)\"  v-tap='[showFrame,item.bannerList[0].href]'><img :src=\"item.subimg\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div ref='banners'>\r\n\t\t\t\t\t\t\t\t\t<ul :style=\"{width:item.bannerList.length<=1?'730px':item.bannerList.length*320+'px'}\">\r\n\t\t\t\t\t\t\t\t\t\t<li v-for=\"(banner,k) in item.bannerList\" :key=\"k\" :style=\"{width:item.bannerList.length<=1?'730px':300+'px'}\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a :href=\" banner.type === 'redirect' ? banner.href :'javascript:void(0)'\" v-tap='[showFrame,banner.href,banner.type]'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img :src=\"banner.img\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t{{banner.content}}\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='zmiti-banner-item-mask'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t{{banner.title}}\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\t\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class='zmiti-data-like-comment'  :class=\"{'zmiti-single':item.commentList.length<=1}\">\r\n\t\t\t\t\t\t\t\t<div v-tap='[like,i,item]'>\r\n\t\t\t\t\t\t\t\t\t<img :src=\"item.isLiked ? imgs.like :imgs.like1\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t<span>{{item.likeCount}}</span>\r\n\t\t\t\t\t\t\t\t\t<div class='zmiti-face' ref='face' v-for='(face,h) in item.faces' :key=\"h\">\r\n\t\t\t\t\t\t\t\t\t\t<img draggable='false' :src='imgs[\"gif\"+(h+1)]'/>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t\t<img :src=\"imgs.comment\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t<span>{{item.commentCount}}</span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class='zmiti-comment-list' v-if='item.commentList.length>0'>\r\n\t\t\t\t\t\t\t\t<div v-for=\"(comment,l) in item.commentList\" :key=\"l\">\r\n\t\t\t\t\t\t\t\t\t<div>{{comment.username}}：</div>\r\n\t\t\t\t\t\t\t\t\t<div>{{comment.title}}</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='zmiti-copyright'>\r\n\t\t\t\t\t\t新华社新媒体中心出品\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div v-if='false' class='zmiti-frame-C lt-full'>\r\n\t\t\t\t<iframe  :src=\"href\" frameborder=\"0\" class=''></iframe>\r\n\t\t\t\t<div class='zmiti-back' v-tap='[hideFrame]'>\r\n\t\t\t\t\t<img :src=\"imgs.back\" alt=\"\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</transition>\r\n";
+	module.exports = "\r\n\t<transition name='index'>\r\n\t\t<div v-if='show' class=\"lt-full zmiti-index-main-ui \" >\r\n\t\t\t<div class='lt-full' ref='page' >\r\n\t\t\t\t<div style='padding-bottom:90px'>\r\n\t\t\t\t\t<div class='zmiti-banner'>\r\n\t\t\t\t\t\t<img :src=\"imgs.banner\" alt=\"\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='zmiti-data-list'>\r\n\t\t\t\t\t\t<div class='zmiti-list-item' v-for=\"(item,i) in dataList\" :key=\"i\">\r\n\t\t\t\t\t\t\t<div class='zmiti-item-date' >\r\n\t\t\t\t\t\t\t\t<div></div>\r\n\t\t\t\t\t\t\t\t<div>{{item.title||item.bannerList[0].title}}<span>{{item.subtitle}}</span></div>\r\n\t\t\t\t\t\t\t\t<div></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='zmiti-banner-list'>\r\n\t\t\t\t\t\t\t\t<div v-if='item.subimg' class='zmiti-subimg'>\r\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0)\"  v-tap='[showFrame,item.bannerList[0].href]'><img :src=\"item.subimg\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div ref='banners'>\r\n\t\t\t\t\t\t\t\t\t<ul :style=\"{width:item.bannerList.length<=1?'730px':item.bannerList.length*320+'px'}\">\r\n\t\t\t\t\t\t\t\t\t\t<li v-for=\"(banner,k) in item.bannerList\" :key=\"k\" :style=\"{width:item.bannerList.length<=1?'730px':300+'px'}\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a :href=\" banner.type === 'redirect' ? banner.href :'javascript:void(0)'\" v-tap='[showFrame,banner.href,banner.type]'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img :src=\"banner.img\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t{{banner.content}}\r\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='zmiti-banner-item-mask'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t{{banner.title}}\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\t\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class='zmiti-data-like-comment'  :class=\"{'zmiti-single':item.commentList.length<=1}\">\r\n\t\t\t\t\t\t\t\t<div v-tap='[like,i,item]'>\r\n\t\t\t\t\t\t\t\t\t<img :src=\"item.isLiked ? imgs.like :imgs.like1\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t<span>{{item.likeCount}}</span>\r\n\t\t\t\t\t\t\t\t\t<div class='zmiti-face' ref='face' v-for='(face,h) in item.faces' :key=\"h\">\r\n\t\t\t\t\t\t\t\t\t\t<img draggable='false' :src='imgs[\"gif\"+(h+1)]'/>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t\t<img :src=\"imgs.comment\" alt=\"\">\r\n\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class='zmiti-comment-list' v-if='item.commentList.length>0'>\r\n\t\t\t\t\t\t\t\t<div v-for=\"(comment,l) in item.commentList\" :key=\"l\">\r\n\t\t\t\t\t\t\t\t\t<div>{{comment.username}}：</div>\r\n\t\t\t\t\t\t\t\t\t<div>{{comment.title}}</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='zmiti-copyright'>\r\n\t\t\t\t\t\t新华社新媒体中心出品\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div v-if='false' class='zmiti-frame-C lt-full'>\r\n\t\t\t\t<iframe  :src=\"href\" frameborder=\"0\" class=''></iframe>\r\n\t\t\t\t<div class='zmiti-back' v-tap='[hideFrame]'>\r\n\t\t\t\t\t<img :src=\"imgs.back\" alt=\"\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</transition>\r\n";
 
 /***/ }),
 /* 19 */
@@ -24836,6 +24836,335 @@
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(23)
+	__vue_template__ = __webpack_require__(31)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\xuchang2018\\project\\summary2018\\components\\main\\index.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// <template>
+	// 	<transition name='main'>
+	// 		<div class='zmiti-main-ui lt-full' :class="{'show':show}" >
+	// 			<div v-if='href' class='zmiti-frame-C lt-full'>
+	// 				<iframe  :src="href" frameborder="0" class=''></iframe>
+	// 				<div class='zmiti-back' v-tap='[hideFrame]'>
+	// 					<img :src="imgs.back" alt="">
+	// 				</div>
+	// 			</div>
+	// 		</div>
+	// 	</transition>
+	// </template>
+	//
+	// <script>
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	__webpack_require__(24);
+
+	var _libUtil = __webpack_require__(14);
+
+	var _libUtil2 = _interopRequireDefault(_libUtil);
+
+	var _toastToastVue = __webpack_require__(26);
+
+	var _toastToastVue2 = _interopRequireDefault(_toastToastVue);
+
+	exports['default'] = {
+
+		props: ['obserable', 'pv', 'randomPv', 'nickname', 'headimgurl'],
+
+		name: 'zmitiindex',
+
+		data: function data() {
+
+			return {
+				href: '',
+				imgs: imgs,
+				show: false
+			};
+		},
+
+		components: { Toast: _toastToastVue2['default'] },
+		methods: {
+
+			hideFrame: function hideFrame() {
+				var viewport = document.createElement('meta');
+				viewport.name = 'viewport';
+				viewport.id = 'viewport';
+				viewport.content = 'width=750,user-scalable=no';
+				document.head.appendChild(viewport);
+				this.href = '';
+				this.show = false;
+			}
+
+		},
+
+		mounted: function mounted() {
+			var _this = this;
+
+			var obserable = this.obserable;
+
+			obserable.on('toggleMain', function (data) {
+				//document.body.style.position = 'fixed'; //防止iframe页上下滚动时带动本页移动
+				//document.body.style.position = 'static'; //取消禁止滚动
+				_this.showFrame = true;
+				_this.show = data.show;
+				_this.href = data.href;
+			});
+		}
+
+	};
+
+	// </script>
+	//
+	module.exports = exports['default'];
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(25);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./index.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./index.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".lt-full {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n\n.zmiti-text-overflow {\n  overflow: hidden;\n  white-space: nowrap;\n  word-break: break-all;\n  text-overflow: ellipsis;\n  -webkit-text-overflow: ellipsis;\n}\n\n.zmiti-play {\n  width: .8rem;\n  height: .8rem;\n  border-radius: 50%;\n  position: fixed;\n  z-index: 1223000 !important;\n  right: .5rem;\n  top: .5rem;\n}\n\n.zmiti-play.rotate {\n  -webkit-animation: rotate 5s linear infinite;\n  animation: rotate 5s linear infinite;\n}\n\n@-webkit-keyframes rotate {\n  to {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.zmiti-main-ui {\n  -webkit-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  perspective: 800px;\n  -webkit-perspective: 800px;\n  width: 750px !important;\n  left: 0;\n  top: 0;\n  overflow: hidden;\n  background: #fff;\n  display: -webkit-box;\n  -webkit-box-align: center;\n  -webkit-box-pack: center;\n  -webkit-box-orient: horizontal;\n  z-index: -1;\n  opacity: 0;\n}\n\n.zmiti-main-ui.show {\n  z-index: 90;\n  opacity: 1;\n}\n\n.zmiti-main-ui .zmiti-frame-C {\n  -webkit-overflow-scrolling: touch;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100vh !important;\n  z-index: 9999002;\n  background: #fff;\n}\n\n.zmiti-main-ui .zmiti-frame-C iframe {\n  width: 100vw;\n  border: 1px solid transparent;\n  left: 0;\n  top: 0;\n  position: relative;\n  overflow: hidden;\n  height: 100vh;\n}\n\n.zmiti-main-ui .zmiti-frame-C .zmiti-back {\n  position: fixed;\n  z-index: 100;\n  right: 20px;\n  bottom: 20px;\n  width: 120px;\n  height: 120px;\n}\n\n@-webkit-keyframes info {\n  from {\n    -webkit-transform: translate3d(0, -30px, 0);\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n  }\n}\n\n@-webkit-keyframes waiting {\n  to {\n    -webkit-transform: rotate(360deg);\n  }\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(27)
+	__vue_script__ = __webpack_require__(29)
+	__vue_template__ = __webpack_require__(30)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\xuchang2018\\project\\summary2018\\components\\toast\\toast.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(28);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-397fb32e&file=toast.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./toast.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-397fb32e&file=toast.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./toast.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "\r\n\t.zmiti-toast-main-ui{\r\n\t\tposition: fixed;\r\n\t\tbackground: rgba(0,0,0,.5);\r\n\t\tcolor:#fff;\r\n\t\tborder-radius: .3rem;\r\n\t\tpadding:.3rem .4rem .3rem .7rem;\r\n\t\tleft: 50%;\r\n\t\tz-index: 111111;\r\n\t\ttop: 50%;\r\n\t\t-webkit-transform:translate3d(-50%,-50%,0);\r\n\t\t-webkit-transition:1s;\r\n\t}\r\n\t.zmiti-toast-main-ui.hide{\r\n\t\tdisplay: none;\r\n\t}\r\n\t.zmiti-toast-main-ui .success{\r\n\t\tdisplay: inline-block;\r\n\t\twidth: 34px;\r\n\t\theight: 34px;\r\n\t\tvertical-align: middle;\r\n\t\tmargin-right: 10px;\r\n\t\tborder-radius: 50%;\r\n\t\tbackground:#00ff12;\r\n\t\tposition: absolute;\r\n\t\tleft: 12px;\r\n\t\ttop: .4rem;\r\n\t\t\r\n\t}\r\n\t.zmiti-toast-main-ui .success:before{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:10px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform:rotate(45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}\r\n\r\n\r\n\t.zmiti-toast-main-ui .error{\r\n\t\tdisplay: inline-block;\r\n\t\twidth: 34px;\r\n\t\theight: 34px;\r\n\t\tvertical-align: middle;\r\n\t\tmargin-right: 10px;\r\n\t\tborder-radius: 50%;\r\n\t\tbackground:#f00;\r\n\t\tposition: absolute;\r\n\t\tleft: 12px;\r\n\t\ttop: .4rem;\r\n\t\t\r\n\t}\r\n\t.zmiti-toast-main-ui .error:before{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:1px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform: translateX(4px) rotate(45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}.zmiti-toast-main-ui .error:after{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:1px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform:translateX(4px) rotate(-45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}\r\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+	// <template>
+	// 	<div class="zmiti-toast-main-ui" :class='{"hide":!msg && !errorMsg}'>
+	// 		<span :class="{'success':msg,'error':errorMsg}"></span>{{msg||errorMsg}}
+	// 	</div>
+	// </template>
+	// <script>
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+	exports['default'] = {
+		props: ['msg', 'errorMsg'],
+		data: function data() {
+			return {};
+		},
+		mounted: function mounted() {}
+	};
+
+	// </script>
+	// <style>
+	// 	.zmiti-toast-main-ui{
+	// 		position: fixed;
+	// 		background: rgba(0,0,0,.5);
+	// 		color:#fff;
+	// 		border-radius: .3rem;
+	// 		padding:.3rem .4rem .3rem .7rem;
+	// 		left: 50%;
+	// 		z-index: 111111;
+	// 		top: 50%;
+	// 		-webkit-transform:translate3d(-50%,-50%,0);
+	// 		-webkit-transition:1s;
+	// 	}
+	// 	.zmiti-toast-main-ui.hide{
+	// 		display: none;
+	// 	}
+	// 	.zmiti-toast-main-ui .success{
+	// 		display: inline-block;
+	// 		width: 34px;
+	// 		height: 34px;
+	// 		vertical-align: middle;
+	// 		margin-right: 10px;
+	// 		border-radius: 50%;
+	// 		background:#00ff12;
+	// 		position: absolute;
+	// 		left: 12px;
+	// 		top: .4rem;
+	//
+	// 	}
+	// 	.zmiti-toast-main-ui .success:before{
+	// 		content:"";
+	// 		position: absolute;
+	// 		width:10px;
+	// 		height: 18px;
+	// 		border:4px solid #fff;
+	// 		-webkit-transform:rotate(45deg);
+	// 		border-top: none;
+	// 		border-left: none;
+	// 		left: 10px;
+	// 		top: 4px;
+	// 	}
+	//
+	//
+	// 	.zmiti-toast-main-ui .error{
+	// 		display: inline-block;
+	// 		width: 34px;
+	// 		height: 34px;
+	// 		vertical-align: middle;
+	// 		margin-right: 10px;
+	// 		border-radius: 50%;
+	// 		background:#f00;
+	// 		position: absolute;
+	// 		left: 12px;
+	// 		top: .4rem;
+	//
+	// 	}
+	// 	.zmiti-toast-main-ui .error:before{
+	// 		content:"";
+	// 		position: absolute;
+	// 		width:1px;
+	// 		height: 18px;
+	// 		border:4px solid #fff;
+	// 		-webkit-transform: translateX(4px) rotate(45deg);
+	// 		border-top: none;
+	// 		border-left: none;
+	// 		left: 10px;
+	// 		top: 4px;
+	// 	}.zmiti-toast-main-ui .error:after{
+	// 		content:"";
+	// 		position: absolute;
+	// 		width:1px;
+	// 		height: 18px;
+	// 		border:4px solid #fff;
+	// 		-webkit-transform:translateX(4px) rotate(-45deg);
+	// 		border-top: none;
+	// 		border-left: none;
+	// 		left: 10px;
+	// 		top: 4px;
+	// 	}
+	// </style>
+	module.exports = exports['default'];
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+	module.exports = "\r\n\t<div class=\"zmiti-toast-main-ui\" :class='{\"hide\":!msg && !errorMsg}'>\r\n\t\t<span :class=\"{'success':msg,'error':errorMsg}\"></span>{{msg||errorMsg}}\r\n\t</div>\r\n";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+	module.exports = "\r\n\t<transition name='main'>\r\n\t\t<div class='zmiti-main-ui lt-full' :class=\"{'show':show}\" >\r\n\t\t\t<div v-if='href' class='zmiti-frame-C lt-full'>\r\n\t\t\t\t<iframe  :src=\"href\" frameborder=\"0\" class=''></iframe>\r\n\t\t\t\t<div class='zmiti-back' v-tap='[hideFrame]'>\r\n\t\t\t\t\t<img :src=\"imgs.back\" alt=\"\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</transition>\r\n";
+
+/***/ }),
+/* 32 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -24899,7 +25228,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 23 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25014,7 +25343,7 @@
 	});
 
 /***/ }),
-/* 24 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -25108,335 +25437,6 @@
 	   }
 	}))
 
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(26)
-	__vue_template__ = __webpack_require__(34)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\xuchang2018\\project\\summary2018\\components\\main\\index.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	// <template>
-	// 	<transition name='main'>
-	// 		<div class='zmiti-main-ui lt-full' :class="{'show':show}" >
-	// 			<div v-if='href' class='zmiti-frame-C lt-full'>
-	// 				<iframe  :src="href" frameborder="0" class=''></iframe>
-	// 				<div class='zmiti-back' v-tap='[hideFrame]'>
-	// 					<img :src="imgs.back" alt="">
-	// 				</div>
-	// 			</div>
-	// 		</div>
-	// 	</transition>
-	// </template>
-	//
-	// <script>
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-		value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	__webpack_require__(27);
-
-	var _libUtil = __webpack_require__(14);
-
-	var _libUtil2 = _interopRequireDefault(_libUtil);
-
-	var _toastToastVue = __webpack_require__(29);
-
-	var _toastToastVue2 = _interopRequireDefault(_toastToastVue);
-
-	exports['default'] = {
-
-		props: ['obserable', 'pv', 'randomPv', 'nickname', 'headimgurl'],
-
-		name: 'zmitiindex',
-
-		data: function data() {
-
-			return {
-				href: '',
-				imgs: imgs,
-				show: false
-			};
-		},
-
-		components: { Toast: _toastToastVue2['default'] },
-		methods: {
-
-			hideFrame: function hideFrame() {
-				var viewport = document.createElement('meta');
-				viewport.name = 'viewport';
-				viewport.id = 'viewport';
-				viewport.content = 'width=750,user-scalable=no';
-				document.head.appendChild(viewport);
-				this.href = '';
-				this.show = false;
-			}
-
-		},
-
-		mounted: function mounted() {
-			var _this = this;
-
-			var obserable = this.obserable;
-
-			obserable.on('toggleMain', function (data) {
-				//document.body.style.position = 'fixed'; //防止iframe页上下滚动时带动本页移动
-				//document.body.style.position = 'static'; //取消禁止滚动
-				_this.showFrame = true;
-				_this.show = data.show;
-				_this.href = data.href;
-			});
-		}
-
-	};
-
-	// </script>
-	//
-	module.exports = exports['default'];
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(28);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./index.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./index.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".lt-full {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n\n.zmiti-text-overflow {\n  overflow: hidden;\n  white-space: nowrap;\n  word-break: break-all;\n  text-overflow: ellipsis;\n  -webkit-text-overflow: ellipsis;\n}\n\n.zmiti-play {\n  width: .8rem;\n  height: .8rem;\n  border-radius: 50%;\n  position: fixed;\n  z-index: 1223000 !important;\n  right: .5rem;\n  top: .5rem;\n}\n\n.zmiti-play.rotate {\n  -webkit-animation: rotate 5s linear infinite;\n  animation: rotate 5s linear infinite;\n}\n\n@-webkit-keyframes rotate {\n  to {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n.zmiti-main-ui {\n  -webkit-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  perspective: 800px;\n  -webkit-perspective: 800px;\n  width: 750px !important;\n  left: 0;\n  top: 0;\n  overflow: hidden;\n  background: #fff;\n  display: -webkit-box;\n  -webkit-box-align: center;\n  -webkit-box-pack: center;\n  -webkit-box-orient: horizontal;\n  z-index: -1;\n  opacity: 0;\n}\n\n.zmiti-main-ui.show {\n  z-index: 90;\n  opacity: 1;\n}\n\n.zmiti-main-ui .zmiti-frame-C {\n  -webkit-overflow-scrolling: touch;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100vh !important;\n  z-index: 9999002;\n  background: #fff;\n}\n\n.zmiti-main-ui .zmiti-frame-C iframe {\n  width: 100vw;\n  border: 1px solid transparent;\n  left: 0;\n  top: 0;\n  position: relative;\n  overflow: hidden;\n  height: 100vh;\n}\n\n.zmiti-main-ui .zmiti-frame-C .zmiti-back {\n  position: fixed;\n  z-index: 100;\n  right: 20px;\n  bottom: 20px;\n  width: 120px;\n  height: 120px;\n}\n\n@-webkit-keyframes info {\n  from {\n    -webkit-transform: translate3d(0, -30px, 0);\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n  }\n}\n\n@-webkit-keyframes waiting {\n  to {\n    -webkit-transform: rotate(360deg);\n  }\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(30)
-	__vue_script__ = __webpack_require__(32)
-	__vue_template__ = __webpack_require__(33)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\xuchang2018\\project\\summary2018\\components\\toast\\toast.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(31);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-397fb32e&file=toast.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./toast.vue", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-397fb32e&file=toast.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./toast.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "\r\n\t.zmiti-toast-main-ui{\r\n\t\tposition: fixed;\r\n\t\tbackground: rgba(0,0,0,.5);\r\n\t\tcolor:#fff;\r\n\t\tborder-radius: .3rem;\r\n\t\tpadding:.3rem .4rem .3rem .7rem;\r\n\t\tleft: 50%;\r\n\t\tz-index: 111111;\r\n\t\ttop: 50%;\r\n\t\t-webkit-transform:translate3d(-50%,-50%,0);\r\n\t\t-webkit-transition:1s;\r\n\t}\r\n\t.zmiti-toast-main-ui.hide{\r\n\t\tdisplay: none;\r\n\t}\r\n\t.zmiti-toast-main-ui .success{\r\n\t\tdisplay: inline-block;\r\n\t\twidth: 34px;\r\n\t\theight: 34px;\r\n\t\tvertical-align: middle;\r\n\t\tmargin-right: 10px;\r\n\t\tborder-radius: 50%;\r\n\t\tbackground:#00ff12;\r\n\t\tposition: absolute;\r\n\t\tleft: 12px;\r\n\t\ttop: .4rem;\r\n\t\t\r\n\t}\r\n\t.zmiti-toast-main-ui .success:before{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:10px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform:rotate(45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}\r\n\r\n\r\n\t.zmiti-toast-main-ui .error{\r\n\t\tdisplay: inline-block;\r\n\t\twidth: 34px;\r\n\t\theight: 34px;\r\n\t\tvertical-align: middle;\r\n\t\tmargin-right: 10px;\r\n\t\tborder-radius: 50%;\r\n\t\tbackground:#f00;\r\n\t\tposition: absolute;\r\n\t\tleft: 12px;\r\n\t\ttop: .4rem;\r\n\t\t\r\n\t}\r\n\t.zmiti-toast-main-ui .error:before{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:1px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform: translateX(4px) rotate(45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}.zmiti-toast-main-ui .error:after{\r\n\t\tcontent:\"\";\r\n\t\tposition: absolute;\r\n\t\twidth:1px;\r\n\t\theight: 18px;\r\n\t\tborder:4px solid #fff;\r\n\t\t-webkit-transform:translateX(4px) rotate(-45deg);\r\n\t\tborder-top: none;\r\n\t\tborder-left: none;\r\n\t\tleft: 10px;\r\n\t\ttop: 4px;\r\n\t}\r\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-	// <template>
-	// 	<div class="zmiti-toast-main-ui" :class='{"hide":!msg && !errorMsg}'>
-	// 		<span :class="{'success':msg,'error':errorMsg}"></span>{{msg||errorMsg}}
-	// 	</div>
-	// </template>
-	// <script>
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-		value: true
-	});
-	exports['default'] = {
-		props: ['msg', 'errorMsg'],
-		data: function data() {
-			return {};
-		},
-		mounted: function mounted() {}
-	};
-
-	// </script>
-	// <style>
-	// 	.zmiti-toast-main-ui{
-	// 		position: fixed;
-	// 		background: rgba(0,0,0,.5);
-	// 		color:#fff;
-	// 		border-radius: .3rem;
-	// 		padding:.3rem .4rem .3rem .7rem;
-	// 		left: 50%;
-	// 		z-index: 111111;
-	// 		top: 50%;
-	// 		-webkit-transform:translate3d(-50%,-50%,0);
-	// 		-webkit-transition:1s;
-	// 	}
-	// 	.zmiti-toast-main-ui.hide{
-	// 		display: none;
-	// 	}
-	// 	.zmiti-toast-main-ui .success{
-	// 		display: inline-block;
-	// 		width: 34px;
-	// 		height: 34px;
-	// 		vertical-align: middle;
-	// 		margin-right: 10px;
-	// 		border-radius: 50%;
-	// 		background:#00ff12;
-	// 		position: absolute;
-	// 		left: 12px;
-	// 		top: .4rem;
-	//
-	// 	}
-	// 	.zmiti-toast-main-ui .success:before{
-	// 		content:"";
-	// 		position: absolute;
-	// 		width:10px;
-	// 		height: 18px;
-	// 		border:4px solid #fff;
-	// 		-webkit-transform:rotate(45deg);
-	// 		border-top: none;
-	// 		border-left: none;
-	// 		left: 10px;
-	// 		top: 4px;
-	// 	}
-	//
-	//
-	// 	.zmiti-toast-main-ui .error{
-	// 		display: inline-block;
-	// 		width: 34px;
-	// 		height: 34px;
-	// 		vertical-align: middle;
-	// 		margin-right: 10px;
-	// 		border-radius: 50%;
-	// 		background:#f00;
-	// 		position: absolute;
-	// 		left: 12px;
-	// 		top: .4rem;
-	//
-	// 	}
-	// 	.zmiti-toast-main-ui .error:before{
-	// 		content:"";
-	// 		position: absolute;
-	// 		width:1px;
-	// 		height: 18px;
-	// 		border:4px solid #fff;
-	// 		-webkit-transform: translateX(4px) rotate(45deg);
-	// 		border-top: none;
-	// 		border-left: none;
-	// 		left: 10px;
-	// 		top: 4px;
-	// 	}.zmiti-toast-main-ui .error:after{
-	// 		content:"";
-	// 		position: absolute;
-	// 		width:1px;
-	// 		height: 18px;
-	// 		border:4px solid #fff;
-	// 		-webkit-transform:translateX(4px) rotate(-45deg);
-	// 		border-top: none;
-	// 		border-left: none;
-	// 		left: 10px;
-	// 		top: 4px;
-	// 	}
-	// </style>
-	module.exports = exports['default'];
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-	module.exports = "\r\n\t<div class=\"zmiti-toast-main-ui\" :class='{\"hide\":!msg && !errorMsg}'>\r\n\t\t<span :class=\"{'success':msg,'error':errorMsg}\"></span>{{msg||errorMsg}}\r\n\t</div>\r\n";
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-	module.exports = "\r\n\t<transition name='main'>\r\n\t\t<div class='zmiti-main-ui lt-full' :class=\"{'show':show}\" >\r\n\t\t\t<div v-if='href' class='zmiti-frame-C lt-full'>\r\n\t\t\t\t<iframe  :src=\"href\" frameborder=\"0\" class=''></iframe>\r\n\t\t\t\t<div class='zmiti-back' v-tap='[hideFrame]'>\r\n\t\t\t\t\t<img :src=\"imgs.back\" alt=\"\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</transition>\r\n";
 
 /***/ })
 /******/ ]);
