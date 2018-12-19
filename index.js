@@ -2,6 +2,7 @@ import Vue from "vue";
 import './components/css/index.css';
 import Index from './components/index/index';
 import Music from './components/music/index';
+import Main from './components/main/index';
 import Obserable from './components/lib/obserable';
 import {
 	imgs
@@ -55,10 +56,10 @@ new Vue({
 		<Upload :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Upload>
 		<Music :obserable='obserable'></Music>
 		<Loading v-if='!show' :width='width' :obserable='obserable'></Loading>
-		<Main :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Main>
 		*/
 		template: `<div>
 		<Index :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Index>
+		<Main :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Main>
 		<div  v-if='!loaded' :style='{background:"#158ae4"}' class='zmiti-loading lt-full'>
 			<div class='zmiti-loading-ui'>
 				 <a href="#">
@@ -104,6 +105,7 @@ new Vue({
 	},
 	components: {
 		Index,
+		Main
 	},
 	mounted() {
 

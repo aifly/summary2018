@@ -3,11 +3,10 @@
   arrow: "./assets/images/arrow.png",
   play: "./assets/images/play.png",
   banner: "./assets/images/banner.jpg",
-  banner1: "./assets/images/banner1.jpg",
-  banner2: "./assets/images/banner2.jpg",
-  banner3: "./assets/images/banner3.jpg",
   like: "./assets/images/like.png",
+  like1: "./assets/images/like1.png",
   comment: "./assets/images/comment.png",
+  back: "./assets/images/back.png",
   img40: "./assets/images/40.jpg",
   gif1: "./assets/images/1.gif",
   gif2: "./assets/images/2.gif",
@@ -39,6 +38,7 @@
   lishi4: "./assets/images/lishi4.jpg",
   lishi5: "./assets/images/lishi5.jpg",
   lishi6: "./assets/images/lishi6.jpg",
+  liusheng: "./assets/images/liusheng.jpg",
   liusheng2: "./assets/images/liusheng2.jpg",
   liusheng3: "./assets/images/liusheng3.jpg",
   liusheng4: "./assets/images/liusheng4.jpg",
@@ -46,7 +46,7 @@
   liusheng6: "./assets/images/liusheng6.jpg",
   liusheng7: "./assets/images/liusheng7.jpg",
   liusheng8: "./assets/images/liusheng8.jpg",
-  liusheng9: "./assets/images/liusheng9.jpg",
+  liusheng9: "./assets/images/liusheng10.jpg",
   yuanquan: "./assets/images/yuanquan.jpg",
   rmxy: "./assets/images/rmxy.jpg",
   tongkuang: "./assets/images/tongkuang.jpg",
@@ -95,13 +95,13 @@ for (var attr in imgs) {
 
 
 window.config = {
-  baseUrl: "https://xlive.xinhuaapp.com",
+  baseUrl: window.location.protocol+"//xlive.xinhuaapp.com",
   secretKey: "e9469538b0623783f38c585821459454",
   dataList: [
     {
       date: "12月17日",
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 113,
       title:"40年，你可曾读懂父亲？",
       faces: new Array(15),
       commentList: [
@@ -123,22 +123,23 @@ window.config = {
         {
           img: imgs.img40,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5327123?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5327123?isview=1&homeshow=1",
           title: "40年，你可曾读懂父亲？ "
         }
       ]
     },
-    {
+   /*  {
       date: "12月17日",
-      likeCount: 200, //2
+      likeCount: 231, //2
       commentCount: 300,
       faces: new Array(15),
       title:"留声40年系列一 ",
+      subimg: imgs.liusheng,
       bannerList: [
         {
           img: imgs.liusheng1,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5080757?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5080757?isview=1&homeshow=1",
           title: "这个刷屏的大展中，有一台专门为你预留的“留声机” "
         }
       ],
@@ -160,15 +161,16 @@ window.config = {
     },
     {
       date: "12月17日",
-      likeCount: 200, //3
-      commentCount: 300,
+      likeCount: 0, //3
+      commentCount: 241,
       faces: new Array(15),
       title:"留声40年系列二",
+      subimg: imgs.liusheng,
       bannerList: [
         {
           img: imgs.gushi,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5235134?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5235134?isview=1&homeshow=1",
           title: "留声40年 那些改变你我的故事 "
         }
       ],
@@ -187,62 +189,73 @@ window.config = {
           title: "乘着歌声的翅膀飞过了四十年，现在听来仍然是热血沸腾！"
         }
       ]
-    },
+    }, */
 
     {
       date: "12月17日",
-      likeCount: 200, //3
-      commentCount: 300,
+      likeCount: 0, //3
+      commentCount: 213,
       faces: new Array(15),
-      title:"留声40年系列三",
+      title:"留声40年系列",
       subtitle:"（横向滑动）",
+      subimg: imgs.liusheng,
       bannerList: [
+         {
+           img: imgs.gushi,
+           href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5235134?isview=1&homeshow=1",
+           title: "留声40年 那些改变你我的故事 "
+         },
+        {
+          img: imgs.liusheng1,
+          href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5080757?isview=1&homeshow=1",
+          title: "这个刷屏的大展中，有一台专门为你预留的“留声机” "
+        },
         {
           img: imgs.liusheng2,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5184181?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5184181?isview=1&homeshow=1",
           title: "“我在最没有能力照顾TA的年纪,碰见了最想照顾一生的人。” "
         },
         {
           img: imgs.liusheng3,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5192820?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5192820?isview=1&homeshow=1",
           title: "“时光久远，念你如常。”"
         },
         {
           img: imgs.liusheng4,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5201151?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5201151?isview=1&homeshow=1",
           title: "初听不识曲中意，再听已是曲中人"
         },
         {
           img: imgs.liusheng5,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5211660?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5211660?isview=1&homeshow=1",
           title: "此身许国，亦能许卿"
         },
         {
           img: imgs.liusheng6,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5223444?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5223444?isview=1&homeshow=1",
           title: "“留声40年”主题列车、地铁站亮相京杭"
         },
         {
           img: imgs.liusheng7,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5229622?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5229622?isview=1&homeshow=1",
           title: "他不是老了，他只是依然热爱着他十五岁时喜欢的东西"
         },
         {
           img: imgs.liusheng8,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5237133?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5237133?isview=1&homeshow=1",
           title: "地铁上的这个展览不仅“刷爆了”朋友圈 还“引爆了”媒体圈"
         },
         {
           img: imgs.liusheng9,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5247845?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5247845?isview=1&homeshow=1",
           title: "哎呀，怎么就火了呢？"
         }
       ],
@@ -258,28 +271,20 @@ window.config = {
         {
           username: "Lian°",
           title: "新华社真是又有活力又具有准确的导向力，点赞"
-        },
-        {
-          username: "伟",
-          title: "身为4号线地铁司机的我，还是很自豪的嘛"
-        },
-        {
-          username: "灯火阑珊处",
-          title: "加油中国，我为你感到骄傲！"
         }
       ]
     },
     {
       date: "12月17日",
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 178,
       faces: new Array(15),
       title: "人民心愿 ",
       bannerList: [
         {
           img: imgs.rmxy,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5316743?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5316743?isview=1&homeshow=1",
           title: "人民心愿 "
         }
       ],
@@ -297,8 +302,8 @@ window.config = {
 
     {
       date: "12月17日",
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 371,
       faces: new Array(15),
       title:'历史从这里转身',
       subtitle:"（横向滑动）",
@@ -306,27 +311,27 @@ window.config = {
       bannerList: [
         {
           img: imgs.lishi2,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/ah.htm",
+          href: window.location.protocol+"//www.xinhuanet.com/interview/c40nzgqj/ah.htm",
           title: "按下手印后"
         },
         {
           img: imgs.lishi3,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/sz.htm",
+          href: window.location.protocol+"//www.xinhuanet.com/interview/c40nzgqj/sz.htm",
           title: "四十正青春"
         },
         {
           img: imgs.lishi4,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/hn.htm",
+          href: window.location.protocol+"//www.xinhuanet.com/interview/c40nzgqj/hn.htm",
           title: "潮起海之南"
         },
         {
           img: imgs.lishi5,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/sh.htm",
+          href: window.location.protocol+"//www.xinhuanet.com/interview/c40nzgqj/sh.htm",
           title: "九〇后传奇"
         },
         {
           img: imgs.lishi6,
-          href: "http://www.xinhuanet.com/interview/c40nzgqj/xa.htm",
+          href: window.location.protocol+"//www.xinhuanet.com/interview/c40nzgqj/xa.htm",
           title: "千年之约定"
         }
       ],
@@ -343,15 +348,15 @@ window.config = {
     },
     {
       date: "12月17日",
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 418,
       faces: new Array(15),
       title:'画一个圈圈',
       bannerList: [
         {
           img: imgs.yuanquan,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5315536?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5315536?isview=1&homeshow=1",
           title: "画一个圈圈圆圆圈圈……哇！ "
         }
       ],
@@ -369,15 +374,15 @@ window.config = {
     },
     {
       date: "12月17日",
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 185,
       title:"一起来做短视频",
       faces: new Array(15),
       bannerList: [
         {
           img: imgs.duanshiping,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5081743?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5081743?isview=1&homeshow=1",
           title: "“一起来画”改革开放40周年动画短视频大赛启动 "
         }
       ],
@@ -392,16 +397,17 @@ window.config = {
         }
       ]
     },
-    {
+    /* {
       date: "12月17日", //6
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 631,
       faces: new Array(15),
       title:"框住你的心",
       bannerList: [
         {
           img: imgs.tongkuang,
-          href: "https://mp.weixin.qq.com/s/0WSGDyDcvr5dCKiVFJWByA",
+          href: window.location.protocol+"//mp.weixin.qq.com/s/0WSGDyDcvr5dCKiVFJWByA",
+          type: 'redirect',
           title: "你来啊！来了我就框住你的心！ "
         }
       ],
@@ -420,18 +426,39 @@ window.config = {
           title: "我把我的靓照P进你们这个框里，我是不是太聪明了"
         }
       ]
+    }, */
+    {
+      date: "12月17日", //13
+      likeCount: 0,
+      commentCount: 300,
+      faces: new Array(15),
+      title: "与时代同框",
+      bannerList: [{
+        img: imgs.shidai,
+        href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5327036?isview=1&homeshow=1",
+        title: "“与时代同框”活动亮相京沪深三地"
+      }],
+      commentList: [{
+          username: "大婶～华视眼镜",
+          title: "我18号就去上海外滩找，看你能不能框住我滴心，哈哈哈。"
+        },
+        {
+          username: "健",
+          title: "我有点儿宽，需要一个大框框昂"
+        }
+      ]
     },
     {
       date: "12月17日", //7
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 521,
       faces: new Array(15),
       title:'40年40个“第一”',
       bannerList: [
         {
           img: imgs.suiyue,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/3531151?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/3531151?isview=1&homeshow=1",
           title: "岁月如歌！改革开放40年40个“第一” "
         }
       ],
@@ -444,15 +471,15 @@ window.config = {
     },
     {
       date: "12月17日", //8
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 142,
       faces: new Array(15),
       title:'"C1978"号航班即将起飞',
       bannerList: [
         {
           img: imgs.kaifang,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5276780?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5276780?isview=1&homeshow=1",
           title: '紧急通知！"C1978"号航班即将起飞，请小伙伴们抓紧登机'
         }
       ],
@@ -469,15 +496,15 @@ window.config = {
     },
     {
       date: "12月17日", //9
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 122,
       faces: new Array(15),
       title:"1分钟里的40年",
       bannerList: [
         {
           img: imgs.dashuju,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5287413?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5287413?isview=1&homeshow=1",
           title: "大数据看中国：1分钟里的40年"
         }
       ],
@@ -494,15 +521,15 @@ window.config = {
     },
     {
       date: "12月17日", //10
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 411,
       title:"这些年，你变了……",
       faces: new Array(15),
       bannerList: [
         {
           img: imgs.zhexienian,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5209837?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5209837?isview=1&homeshow=1",
           title: "这些年，你变了……"
         }
       ],
@@ -519,15 +546,15 @@ window.config = {
     },
     {
       date: "12月17日", //11
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 821,
       faces: new Array(15),
       title:"令人心动的特殊物件",
       bannerList: [
         {
           img: imgs.teshuwujian,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5103291?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5103291?isview=1&homeshow=1",
           title: "看！这些令人心动的特殊物件"
         }
       ],
@@ -545,15 +572,15 @@ window.config = {
     },
     {
       date: "12月17日", //12
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 363,
       faces: new Array(15),
       title:"请回答2018",
       bannerList: [
         {
           img: imgs.haohio,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5281206?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5281206?isview=1&homeshow=1",
           title: "新华社推出“请回答2018”线上、线下活动"
         }
       ],
@@ -564,34 +591,10 @@ window.config = {
         }
       ]
     },
-    {
-      date: "12月17日", //13
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title:"与时代同框",
-      bannerList: [
-        {
-          img: imgs.shidai,
-          href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5327036?isview=1&homeshow=1",
-          title: "“与时代同框”活动亮相京沪深三地"
-        }
-      ],
-      commentList: [
-        {
-          username: "大婶～华视眼镜",
-          title: "我18号就去上海外滩找，看你能不能框住我滴心，哈哈哈。"
-        },
-        {
-          username: "健",
-          title: "我有点儿宽，需要一个大框框昂"
-        }
-      ]
-    },
+    
     {
       date: "12月17日", //14
-      likeCount: 200,
+      likeCount: 0,
       commentCount: 300,
       faces: new Array(15),
       title:"改革开放40年大事",
@@ -599,7 +602,7 @@ window.config = {
         {
           img: imgs.zhencang,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5324940?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5324940?isview=1&homeshow=1",
           title: "每一张都值得珍藏！160秒手绘改革开放40年大事"
         }
       ],
@@ -615,65 +618,16 @@ window.config = {
       ]
     },
     {
-      date: "12月17日", //15
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "来……来了！",
-      bannerList: [
-        {
-          img: imgs.yifu,
-          href: "https://mp.weixin.qq.com/s/dpDKK_7lwDejV8fih4OSuw",
-          title: "来……来了！"
-        }
-      ],
-      commentList: [
-        {
-          username: "不忘初心&一味做自己",
-          title: "我有故事，你有酒吗？"
-        },
-        {
-          username: "茂华",
-          title: "我就想知道，照片中塗鸦的字儿是谁写的？哈哈哈"
-        }
-      ]
-    },
-    {
-      date: "12月17日", //16
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "刘烨的大片",
-      bannerList: [
-        {
-          img: imgs.liuye,
-          href: "https://mp.weixin.qq.com/s/swG2g22Cv4Mv2RFeT9Sj3w",
-          title: "来了！这就是刘烨的大片"
-        }
-      ],
-      commentList: [
-        {
-          username: "MH",
-          title:
-            "我和你音乐响起，莫名留下了眼泪。零八奥运，我是孩童，十年时间，又翻了新天地。"
-        },
-        {
-          username: "大萌神呀~",
-          title: "终于等到揭晓答案了，前排观影。"
-        }
-      ]
-    },
-    {
       date: "12月17日", //17
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 911,
       faces: new Array(15),
       title: "穿越时光的照片",
       bannerList: [
         {
           img: imgs.chuanyue,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5312090?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5312090?isview=1&homeshow=1",
           title: "这40组穿越时光的照片，哪张感动了你？"
         }
       ],
@@ -690,15 +644,15 @@ window.config = {
     },
     {
       date: "12月17日", //18
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 522,
       faces: new Array(15),
       title:"你的表情可“斗”了",
       bannerList: [
         {
           img: imgs.doutu,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5272561?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5272561?isview=1&homeshow=1",
           title: "改革开放40年|听说，你的表情可“斗”了"
         }
       ],
@@ -706,15 +660,15 @@ window.config = {
     },
     {
       date: "12月17日", //19
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 611,
       faces: new Array(15),
       title:"改革开放40年",
       bannerList: [
         {
           img: imgs.gaigekaifang40,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5112508?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5112508?isview=1&homeshow=1",
           title: "改革开放40年|“他”经历了这些事儿，你呢？"
         }
       ],
@@ -722,15 +676,15 @@ window.config = {
     },
     {
       date: "12月17日", //20
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 152,
       title:"40年里的新鲜事物",
       faces: new Array(15),
       bannerList: [
         {
           img: imgs.xinxian,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5167594?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5167594?isview=1&homeshow=1",
           title: "请回答，1978-2018！40年里的新鲜事物 你还记得吗？"
         }
       ],
@@ -738,15 +692,15 @@ window.config = {
     },
     {
       date: "12月17日", //21
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 218,
       faces: new Array(15),
       title: "这才是中国该有的动画！",
       bannerList: [
         {
           img: imgs.donghua,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5336021?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5336021?isview=1&homeshow=1",
           title: "这才是中国该有的动画！"
         }
       ],
@@ -754,38 +708,23 @@ window.config = {
     },
     {
       date: "12月17日", //22
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 527,
       faces: new Array(15),
       title: "一起随着时间去旅行",
       bannerList: [
         {
           img: imgs.suoyouren,
           href:
-            "http://h5.zhongguowangshi.com/h5/qihuanzhilv/index.html?from=timeline&isappinstalled=0",
+            window.location.protocol+"//h5.zhongguowangshi.com/h5/qihuanzhilv/index.html?from=timeline&isappinstalled=0",
           title: "@所有人，一起随着时间去旅行"
         }
       ],
       commentList: []
     },
     {
-      date: "12月17日", //23
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "这就是1978的回答！",
-      bannerList: [
-        {
-          img: imgs.huida,
-          href: "https://mp.weixin.qq.com/s/7Aufzr6CTRNg5af3s0uOFg",
-          title: "这就是1978的回答！"
-        }
-      ],
-      commentList: []
-    },
-    {
       date: "12月17日", //24
-      likeCount: 200,
+      likeCount: 317,
       commentCount: 300,
       faces: new Array(15),
       title: "我们的一点心意",
@@ -793,7 +732,7 @@ window.config = {
         {
           img: imgs.jinian,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5175337?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5175337?isview=1&homeshow=1",
           title: "在这段特殊的日子，这是我们的一点心意"
         }
       ],
@@ -805,82 +744,22 @@ window.config = {
         {
           username: "暴走萝莉",
           title: "谢谢新华社的心意！"
-        },
-        {
-          username: "哈哈",
-          title: "这点心意，用来做微信头像，永久记忆！"
         }
       ]
     },
-    {
-      date: "12月17日", //25
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title:"寻找“你”“我”的故事",
-      bannerList: [
-        {
-          img: imgs.luopan,
-          href: "https://mp.weixin.qq.com/s/y9W-uWGFypRYphqzeUYucg",
-          title: "在岁月罗盘中，寻找“你”“我”的故事"
-        }
-      ],
-      commentList: [
-        {
-          username: "SAgP",
-          title: "岁月罗盘，快带我回到过去吧"
-        },
-        {
-          username: "刘锋",
-          title: "人生就是一场精彩纷呈舞台，让你发挥表演"
-        },
-        {
-          username: "LZ仁",
-          title: "岁月的罗盘，承载了几代人的艰辛与希望、奋斗与輝煌的历史回望！"
-        }
-      ]
-    },
-    {
-      date: "12月17日", //26
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "这33米的风景，值得你好好看看",
-      bannerList: [
-        {
-          img: imgs.fengjing,
-          href: "https://mp.weixin.qq.com/s/aDvucBZfXGU1CDycgMP0SA",
-          title: "这33米的风景，值得你好好看看"
-        }
-      ],
-      commentList: [
-        {
-          username: "喜欢欣赏",
-          title:
-            " 综上所述这33米的风景，展现大美中国，进化中的人文之美……一起来感受一下吧！值得好好看看～"
-        },
-        {
-          username: "小苹果",
-          title: "人在画中走  景在屏中游"
-        },
-        {
-          username: "八喜",
-          title:
-            "你不说，我真不知道。以前，只知道日新月异，现在，看到了争分夺秒"
-        }
-      ]
-    },
+  
+   
     {
       date: "12月17日", //27
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 617,
       title: "40年来最流行的那些衣服",
       faces: new Array(15),
       bannerList: [
         {
           img: imgs.shouhui,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5300638?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5300638?isview=1&homeshow=1",
           title: "手绘“穿”越  40年来最流行的那些衣服"
         }
       ],
@@ -893,24 +772,20 @@ window.config = {
         {
           username: "@四字弟弟的二十喵喵",
           title: "现在看以前的衣服也没觉得过时。"
-        },
-        {
-          username: "@lazy20137",
-          title: "服饰的变化，也体现了我国经济的变化"
         }
       ]
     },
     {
       date: "12月17日", //28
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 428,
       faces: new Array(15),
       title: "两座城的眉眼怕你看不懂",
       bannerList: [
         {
           img: imgs.meiyan,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5240915?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5240915?isview=1&homeshow=1",
           title: "40岁以下别看！两座城的眉眼怕你看不懂"
         }
       ],
@@ -931,15 +806,15 @@ window.config = {
     },
     {
       date: "12月17日", //29
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 319,
       faces: new Array(15),
       title: "一个字形容改革开放四十年",
       bannerList: [
         {
           img: imgs.yigezi,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5046240?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5046240?isview=1&homeshow=1",
           title: "如果用一个字形容改革开放四十年，你会用？"
         }
       ],
@@ -960,15 +835,15 @@ window.config = {
     },
     {
       date: "12月17日", //30
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 286,
       faces: new Array(15),
       title: "“国博内的走秀”见证改革开放",
       bannerList: [
         {
           img: imgs.zouxiu,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5080755?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5080755?isview=1&homeshow=1",
           title: "“国博内的走秀”见证改革开放４０年服装变化"
         }
       ],
@@ -976,15 +851,15 @@ window.config = {
     },
     {
       date: "12月17日", //31
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 641,
       faces: new Array(15),
       title: "噌！40秒40年 这里发生了什么？",
       bannerList: [
         {
           img: imgs.fasheng,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5288728?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5288728?isview=1&homeshow=1",
           title: "噌！40秒40年 这里发生了什么？"
         }
       ],
@@ -1006,15 +881,15 @@ window.config = {
     },
     {
       date: "12月17日", //32
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 512,
       faces: new Array(15),
       title: "情·弦 草原歌声四十年",
       bannerList: [
         {
           img: imgs.chuangyi,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5330841?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5330841?isview=1&homeshow=1",
           title: "创意视频｜情·弦 草原歌声四十年"
         }
       ],
@@ -1035,15 +910,15 @@ window.config = {
     },
     {
       date: "12月17日", //33
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 420,
       faces: new Array(15),
       title: "见证丨40年，衣之变",
       bannerList: [
         {
           img: imgs.jianzheng,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5175070?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5175070?isview=1&homeshow=1",
           title: "见证丨40年，衣之变"
         }
       ],
@@ -1064,7 +939,7 @@ window.config = {
     },
     {
       date: "12月17日", //34
-      likeCount: 200,
+      likeCount: 0,
       commentCount: 300,
       faces: new Array(15),
       title: "还记得“傻子瓜子”吗？",
@@ -1072,7 +947,7 @@ window.config = {
         {
           img: imgs.shaziguazi,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/4598832?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/4598832?isview=1&homeshow=1",
           title: "还记得“傻子瓜子”吗？"
         }
       ],
@@ -1093,15 +968,15 @@ window.config = {
     },
     {
       date: "12月17日", //35
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 512,
       faces: new Array(15),
       title: "改变中国 影响世界的40年的数据视频",
       bannerList: [
         {
           img: imgs.gaibian,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5326020?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5326020?isview=1&homeshow=1",
           title: "创意数据视频|改变中国 影响世界的40年"
         }
       ],
@@ -1122,15 +997,15 @@ window.config = {
     },
     {
       date: "12月17日", //36
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 615,
       faces: new Array(15),
       title: "全球治理 中国方案",
       bannerList: [
         {
           img: imgs.fangan,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5303777?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5303777?isview=1&homeshow=1",
           title: "重磅微视频|全球治理 中国方案"
         }
       ],
@@ -1138,15 +1013,15 @@ window.config = {
     },
     {
       date: "12月17日", //37
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 283,
       faces: new Array(15),
       title: "跨越40年的民心见证",
       bannerList: [
         {
           img: imgs.kuayue,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5273069?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5273069?isview=1&homeshow=1",
           title: "跨越40年的民心见证"
         }
       ],
@@ -1167,15 +1042,15 @@ window.config = {
     },
     {
       date: "12月17日", //38
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 253,
       faces: new Array(15),
       title: "从改革开放40年看中国奇迹",
       bannerList: [
         {
           img: imgs.fengyu,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5268414?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5268414?isview=1&homeshow=1",
           title: "风雨砥砺 壮丽史诗——从改革开放40年看中国奇迹"
         }
       ],
@@ -1196,15 +1071,15 @@ window.config = {
     },
     {
       date: "12月17日", //39
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 906,
       faces: new Array(15),
       title: "习主席曾在这里这样说……",
       bannerList: [
         {
           img: imgs.guanyu,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5329989?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5329989?isview=1&homeshow=1",
           title: "关于改革开放，习主席曾在这里这样说……"
         }
       ],
@@ -1227,15 +1102,15 @@ window.config = {
     },
     {
       date: "12月17日", //40
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 146,
       faces: new Array(15),
       title: "“第一动力”的时代答卷",
       bannerList: [
         {
           img: imgs.dajuan,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5060796?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5060796?isview=1&homeshow=1",
           title: "创新：“第一动力”的时代答卷"
         }
       ],
@@ -1243,15 +1118,15 @@ window.config = {
     },
     {
       date: "12月17日", //41
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 621,
       faces: new Array(15),
       title: "有一个地方，让你边嗨边感动",
       bannerList: [
         {
           img: imgs.gandong,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5323994?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5323994?isview=1&homeshow=1",
           title: "今天，有这样一个地方，让你边嗨边感动"
         }
       ],
@@ -1273,15 +1148,15 @@ window.config = {
     },
     {
       date: "12月17日", //42
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 361,
       faces: new Array(15),
       title: "寻找40年里的我",
       bannerList: [
         {
           img: imgs.xunzhao,
           href:
-            "https://xhpfmapi.zhongguowangshi.com/vh512/share/5334395?isview=1&homeshow=1",
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5334395?isview=1&homeshow=1",
           title: "寻找40年里的我"
         }
       ],
@@ -1289,14 +1164,14 @@ window.config = {
     },
     {
       date: "12月17日", //43
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 881,
       faces: new Array(15),
       title: "回顾改革开放40年",
       bannerList: [
         {
           img: imgs.huigu,
-          href: "http://www.sc.xinhuanet.com/xmt/2018-04/09/c_1122654820.htm",
+          href: window.location.protocol+"//www.sc.xinhuanet.com/xmt/2018-04/09/c_1122654820.htm",
           title: "@新的社会阶层人士 回顾改革开放40年 这些题目你能答对吗？"
         }
       ],
@@ -1304,95 +1179,25 @@ window.config = {
     },
     {
       date: "12月17日", //44
-      likeCount: 200,
-      commentCount: 300,
+      likeCount: 0,
+      commentCount: 378,
       faces: new Array(15),
       title: "漫说改革开放40年通讯工具变迁",
       bannerList: [
         {
           img: imgs.manshuo,
-          href: "http://www.ah.xinhuanet.com/2018-09/14/c_1123430867.htm",
+          href: window.location.protocol+"//www.ah.xinhuanet.com/2018-09/14/c_1123430867.htm",
           title: "漫说改革开放40年通讯工具变迁：穿越时空的爱"
         }
       ],
       commentList: []
     },
-    {
-      date: "12月17日", //45
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "帮个忙，请你@这个人",
-      bannerList: [
-        {
-          img: imgs.bangmang,
-          href: "https://mp.weixin.qq.com/s/mPOQb_21iV_1qodD2NEv3Q",
-          title: "帮个忙，请你@这个人"
-        }
-      ],
-      commentList: [
-        {
-          username: "茄丫茄丫茄",
-          title:
-            "@我的家人，感谢你们一直健健康康地陪伴我身边25年...希望再更多的35/45/55...你们都健康~~"
-        },
-        {
-          username: "Elisha",
-          title: "一定是特别的缘分，才一路走来成为了一家人"
-        },
-        {
-          username: "WAN",
-          title: "@我的祖国母亲"
-        }
-      ]
-    },
-    {
-      date: "12月17日", //46
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title: "这里面一定有你的青春",
-      bannerList: [
-        {
-          img: imgs.qingchun,
-          href: "https://mp.weixin.qq.com/s/kIAOOtFtihHX411zQMIZqg",
-          title: "敢不敢点开？这里面一定有你的青春......"
-        }
-      ],
-      commentList: [
-        {
-          username: "烟🔥 火",
-          title: "同桌的你现在好吗？"
-        },
-        {
-          username: "北风轻飘",
-          title: " 熟悉的老歌还是那样的经典,我们的青春已远去,怀念青春!"
-        },
-        {
-          username: "大刘666",
-          title: "时光不老，青春不散"
-        }
-      ]
-    },
-    {
-      date: "12月17日", //47
-      likeCount: 200,
-      commentCount: 300,
-      faces: new Array(15),
-      title:"不拼爹，不拼颜值，我们一起拼年代",
-      bannerList: [
-        {
-          img: imgs.pindie,
-          href: "https://mp.weixin.qq.com/s/F6wa-zeshiH-oy5BpiDerQ",
-          title: "不拼爹，不拼颜值，我们一起拼年代！"
-        }
-      ],
-      commentList: []
-    }
+   
+   
     /* {
       date: "12月16日",
       faces: new Array(15),
-      likeCount: 200,
+      likeCount: 0,
       commentCount: 300,
       commentList: [
         {
@@ -1412,12 +1217,12 @@ window.config = {
       bannerList: [
         {
           img: imgs.liusheng1,
-          href:"https://xhpfmapi.zhongguowangshi.com/vh512/share/5080757?isview=1&homeshow=1",
+          href:window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5080757?isview=1&homeshow=1",
           title: "这个刷屏的大展中，有一台专门为你预留的“留声机”",
         },
         {
           img: imgs.liusheng2,
-          href: "https://xhpfmapi.zhongguowangshi.com/vh512/share/5184181?isview=1&homeshow=1",
+          href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5184181?isview=1&homeshow=1",
           title: '我在最没有能力照顾TA的年纪,碰见了最想照顾一生的人。',
         },
         {
