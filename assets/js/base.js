@@ -82,6 +82,7 @@
   xunzhao: "./assets/images/xunzhao.jpg",
   huigu: "./assets/images/huigu.jpg",
   manshuo: "./assets/images/manshuo.jpg",
+  yinyue: "./assets/images/yinyue.jpg",
   bangmang: "./assets/images/bangmang.jpg",
   pindie: "./assets/images/pindie.jpg",
   qingchun: "./assets/images/qingchun.jpg",
@@ -90,7 +91,9 @@
  
 var arr = [];
 for (var attr in imgs) {
-	arr.push(imgs[attr]);
+  if(imgs[attr].split('.')[1] !== 'gif'){
+    arr.push(imgs[attr]);
+  }
 }
 
 
@@ -199,6 +202,7 @@ window.config = {
       title:"留声40年系列",
       subtitle:"（横向滑动）",
       subimg: imgs.liusheng,
+      subhref: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/4831678?isview=1&homeshow=1",
       bannerList: [
          {
            img: imgs.gushi,
@@ -446,6 +450,19 @@ window.config = {
           username: "健",
           title: "我有点儿宽，需要一个大框框昂"
         }
+      ]
+    }, {
+      date: "12月17日", //13
+      likeCount: 0,
+      commentCount: 300,
+      faces: new Array(15),
+      title: "一首原创音乐MV",
+      bannerList: [{
+        img: imgs.yinyue,
+        href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5343448",
+        title: "四十年|新华社发了一首原创音乐MV，超！好！听！"
+      }],
+      commentList: [
       ]
     },
     {
@@ -844,7 +861,7 @@ window.config = {
           img: imgs.zouxiu,
           href:
             window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5080755?isview=1&homeshow=1",
-          title: "“国博内的走秀”见证改革开放４０年服装变化"
+          title: "“国博内的走秀”见证改革开放40年服装变化"
         }
       ],
       commentList: []

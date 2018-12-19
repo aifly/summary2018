@@ -5,6 +5,9 @@ $viewW: 750px;
 $bgColor: #fcfff8;
 $color: #fffb88;
 
+html,body{
+    width: 100vw;
+}
 .zmiti-main-ui {
     @include transform3d;
 
@@ -33,6 +36,7 @@ $color: #fffb88;
        //position: fixed !important;
        z-index: 9999002;
        
+       width: 100vw !important;
        background: #fff;
 
        iframe {
@@ -43,6 +47,8 @@ $color: #fffb88;
            position: relative;
            overflow: hidden;
            height: 100vh;
+           padding: 0;
+           margin: 0;
        }
 
        .zmiti-back {
