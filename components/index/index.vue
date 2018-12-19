@@ -15,7 +15,7 @@
 							</div>
 							<div class='zmiti-banner-list'>
 								<div v-if='item.subimg' class='zmiti-subimg'>
-									<a href="javascript:void(0)"  v-tap='[showFrame,item.bannerList[0].href]'><img :src="item.subimg" alt=""></a>
+									<a href="javascript:void(0)"  v-tap='[showFrame,item.subhref || item.bannerList[0].href]'><img :src="item.subimg" alt=""></a>
 								</div>
 								<div ref='banners'>
 									<ul :style="{width:item.bannerList.length<=1?'730px':item.bannerList.length*320+'px'}">
@@ -108,7 +108,7 @@
 					window.location.href = href;
 					return;
 				}
-				document.head.removeChild(document.getElementById('viewport'));
+				///document.head.removeChild(document.getElementById('viewport'));
 				this.obserable.trigger({
 					type:"toggleMain",
 					data:{
