@@ -3,16 +3,14 @@
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
-}
+  top: 0; }
 
 .zmiti-text-overflow {
   overflow: hidden;
   white-space: nowrap;
   word-break: break-all;
   text-overflow: ellipsis;
-  -webkit-text-overflow: ellipsis;
-}
+  -webkit-text-overflow: ellipsis; }
 
 .zmiti-play {
   width: .8rem;
@@ -21,21 +19,15 @@
   position: fixed;
   z-index: 1223000 !important;
   right: .5rem;
-  top: .5rem;
-}
-
-.zmiti-play.rotate {
-  -webkit-animation: rotate 5s linear infinite;
-  animation: rotate 5s linear infinite;
-}
+  top: .5rem; }
+  .zmiti-play.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite; }
 
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
+    transform: rotate(360deg); } }
 .zmiti-main-ui {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -51,53 +43,40 @@
   -webkit-box-pack: center;
   -webkit-box-orient: horizontal;
   z-index: -1;
-  opacity: 0;
-}
-
-.zmiti-main-ui.show {
-  z-index: 90;
-  opacity: 1;
-}
-
-.zmiti-main-ui .zmiti-frame-C {
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100vh !important;
-  z-index: 9999002;
-  background: #fff;
-}
-
-.zmiti-main-ui .zmiti-frame-C iframe {
-  width: 100vw;
-  border: 1px solid transparent;
-  left: 0;
-  top: 0;
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.zmiti-main-ui .zmiti-frame-C .zmiti-back {
-  position: fixed;
-  z-index: 100;
-  right: 20px;
-  bottom: 20px;
-  width: 120px;
-  height: 120px;
-}
+  opacity: 0; }
+  .zmiti-main-ui.show {
+    z-index: 90;
+    opacity: 1; }
+  .zmiti-main-ui .zmiti-frame-C {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh !important;
+    z-index: 9999002;
+    background: #fff; }
+    .zmiti-main-ui .zmiti-frame-C iframe {
+      width: 100vw;
+      border: 1px solid transparent;
+      left: 0;
+      top: 0;
+      position: relative;
+      overflow: hidden;
+      height: 100vh; }
+    .zmiti-main-ui .zmiti-frame-C .zmiti-back {
+      position: fixed;
+      z-index: 100;
+      right: 20px;
+      bottom: 20px;
+      width: 120px;
+      height: 120px; }
 
 @-webkit-keyframes info {
   from {
-    -webkit-transform: translate3d(0, -30px, 0);
-  }
+    -webkit-transform: translate3d(0, -30px, 0); }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-}
-
+    -webkit-transform: translate3d(0, 0, 0); } }
 @-webkit-keyframes waiting {
   to {
-    -webkit-transform: rotate(360deg);
-  }
-}
+    -webkit-transform: rotate(360deg); } }
+
+/*# sourceMappingURL=index.css.map */
