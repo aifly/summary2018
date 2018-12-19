@@ -18,8 +18,8 @@
 									<a href="javascript:void(0)"  v-tap='[showFrame,item.subhref || item.bannerList[0].href]'><img :src="item.subimg" alt=""></a>
 								</div>
 								<div ref='banners'>
-									<ul :style="{width:item.bannerList.length<=1?'730px':item.bannerList.length*320+'px'}">
-										<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'730px':300+'px'}">
+									<ul :style="{width:item.bannerList.length<=1?'1220px':item.bannerList.length*420+'px'}">
+										<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'1220px':400+'px'}">
 											<a :href=" banner.type === 'redirect' ? banner.href :'javascript:void(0)'" v-tap='[showFrame,banner.href,banner.type]'>
 												<img :src="banner.img" alt="">
 												<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>

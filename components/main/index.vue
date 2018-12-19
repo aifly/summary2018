@@ -41,7 +41,7 @@
 				viewport.name = 'viewport';
 				viewport.id = 'viewport';
 				viewport.content = 'width=750,user-scalable=no';
-				document.head.appendChild(viewport);
+				//document.head.appendChild(viewport);
 				this.href = '';
 				this.show =false;
 			}

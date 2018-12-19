@@ -20,13 +20,13 @@ html, body {
 
 body {
 	font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
-	font-size: 30px;
+	font-size: 50px;
 
 	&>div {
 	}
 
 }
-$viewW:750px;
+$viewW:1242px;
 img {
 	border: none;
 	vertical-align: middle;
@@ -41,7 +41,7 @@ img {
 
 	width: $viewW !important;
 	left: 50% !important;
-	margin-left: -375px;;
+	margin-left: -$viewW/2;;
 
 	.zmiti-loading-ui {
 		width: 6rem;
@@ -63,7 +63,7 @@ img {
 			margin: -100px 0 0 -100px;
 
 			.zmiti-head {
-				$size: 70px;
+				$size: 100px;
 				width: $size;
 				height: $size;
 				@include br(50%);

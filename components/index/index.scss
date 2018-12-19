@@ -1,7 +1,7 @@
 ﻿@import "../css/base.scss";
 
 $baseColor: #fcffb4;
-$viewW: 750px;
+$viewW: 1125px;
 $bgColor: #4081dd;
 
 .zmiti-index-main-ui {
@@ -37,7 +37,7 @@ $bgColor: #4081dd;
     .zmiti-data-list {
         $color: #113e99;
 
-        width: 750px;
+        width: $viewW;
         margin: 20px auto;
 
         .zmiti-list-item {
@@ -51,7 +51,7 @@ $bgColor: #4081dd;
 
                 @include pos(a);
 
-                width: 750px;
+                width: $viewW;
                 border-bottom: 16px solid #eaeaea;
                 bottom: -30px;
                 left: 0;
@@ -70,7 +70,7 @@ $bgColor: #4081dd;
             -webkit-box-pack: start;
             height: 100px;
             line-height: 100px;
-            width: 730px;
+            width: 1000px;
             margin: 0 auto;
 
             &.zmiti-single{
@@ -110,19 +110,19 @@ $bgColor: #4081dd;
             }
 
             img {
-                width: 40px;
+                width: 60px;
             }
         }
 
         .zmiti-comment-list {
-            width: 680px;
+            width: 1100px;
             margin: 0 auto;
             background: #eaeaea;
-            padding: 20px;
+            padding: 50px;
 
             @include br(10px);
             @include pos(r);
-            font-size:24px;
+            font-size:44px;
 
             &:before {
                 content: "";
@@ -174,17 +174,17 @@ $bgColor: #4081dd;
             & > div {
                 &:nth-of-type(2) {
                     margin: 0 10px;
-                    font-size: 34px;
+                    font-size: 54px;
 
                     span {
-                        font-size: 22px;
+                        font-size: 32px;
                     }
                 }
 
                 &:nth-of-type(1), &:nth-of-type(3) {
                     @include pos(r);
 
-                    width: 100px;
+                    width: 140px;
                     height: 2px;
                     background: $color;
 
@@ -217,7 +217,7 @@ $bgColor: #4081dd;
 
         .zmiti-banner-list {
             overflow: hidden;
-            width: 720px;
+            width: 1050px;
             margin: 0 auto;
 
             .zmiti-subimg {

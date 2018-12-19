@@ -128,11 +128,13 @@ new Vue({
 		}
 
 	
-
 		s.loading(arr, (scale) => {
 			s.width = scale *100|0;
-		}, () => {
-			
+		}, () => {	
+
+			//alert(document.body.querySelector('div').offsetWidth);
+
+
 			s.show = true;
 			s.loaded = true;
 			

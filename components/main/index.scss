@@ -1,7 +1,7 @@
 ﻿@import "../css/base.scss";
 
 $baseColor: #fcffb4;
-$viewW: 750px;
+$viewW: 1242px;
 $bgColor: #fcfff8;
 $color: #fffb88;
 
@@ -53,11 +53,11 @@ html,body{
 
        .zmiti-back {
            @include pos(f);
-           z-index: 100;
-           right: 20px;
-           bottom: 20px;
-           width: 120px;
-           height: 120px;
+           z-index: 1001;
+           right: 160px;
+           bottom: 260px;
+           width: 200px;
+           height: 200px;
        }
    }
 }
