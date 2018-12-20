@@ -23,6 +23,7 @@
   gif13: "./assets/images/13.gif",
   gif14: "./assets/images/14.gif",
   gif15: "./assets/images/15.gif",
+  ai: "./assets/images/ai.gif",
 
   liusheng1: "./assets/images/42.gif",
   zhencang: "./assets/images/zhencang.gif",
@@ -463,6 +464,31 @@ window.config = {
         title: "四十年|新华社发了一首原创音乐MV，超！好！听！"
       }],
       commentList: [
+      ]
+    },
+     {
+      date: "12月17日", //13
+      likeCount: 0,
+      commentCount: 300,
+      faces: new Array(15),
+      title: "好玩的AI来了！",
+      bannerList: [{
+        img: imgs.ai,
+        href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5310140?from=singlemessage&isappinstalled=0",
+        title: "好玩的AI来了！给旧时光上色 重拾多彩40年"
+      }],
+      commentList: [
+         {
+          username:"新阕离歌",
+          title:"刚才试了给一只熊猫上色，你猜怎么着？"
+         },{
+          username:"胜于蓝的青",
+          title:"天哪！新新太温暖了！当我把外公外婆模糊的老照片上色之后，眼泪花儿都包不住了"
+         },
+         {
+          username:"神仙小猪",
+          title:"这个很牛呀，黑科技，给新华社和百度AI点赞！"
+         }
       ]
     },
     {
