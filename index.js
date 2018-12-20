@@ -60,8 +60,8 @@ new Vue({
 		template: `<div>
 		<Index :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Index>
 		<Main :pv='pv' :nickname='nickname' :headimgurl='headimgurl'   v-if='show && !isShare'  :obserable='obserable'></Main>
-		<div  v-if='!loaded' :style='{background:"#158ae4"}' class='zmiti-loading lt-full'>
-			<div class='zmiti-loading-ui'>
+		<div  v-if='!loaded' class='zmiti-loading lt-full'>
+			<div class='zmiti-loading-ui1' >
 				 <a href="#">
 			  		<section class='zmiti-head' :style="{background:'url(./assets/images/logo.png) no-repeat center / cover'}"></section>
 			        <div class="line1"></div>
@@ -133,13 +133,10 @@ new Vue({
 		}, () => {	
 
 			//alert(document.body.querySelector('div').offsetWidth);
-
-
 			s.show = true;
 			s.loaded = true;
 			
 		})
-		
 
 		window.$ = $;
 

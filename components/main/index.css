@@ -3,14 +3,16 @@
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+}
 
 .zmiti-text-overflow {
   overflow: hidden;
   white-space: nowrap;
   word-break: break-all;
   text-overflow: ellipsis;
-  -webkit-text-overflow: ellipsis; }
+  -webkit-text-overflow: ellipsis;
+}
 
 .zmiti-play {
   width: .8rem;
@@ -19,70 +21,91 @@
   position: fixed;
   z-index: 1223000 !important;
   right: .5rem;
-  top: .5rem; }
-  .zmiti-play.rotate {
-    -webkit-animation: rotate 5s linear infinite;
-    animation: rotate 5s linear infinite; }
+  top: .5rem;
+}
+
+.zmiti-play.rotate {
+  -webkit-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
+}
 
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
+
 html, body {
-  width: 100vw; }
+  width: 10rem;
+}
 
 .zmiti-main-ui {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  perspective: 800px;
-  -webkit-perspective: 800px;
-  width: 1242px !important;
+  width: 10rem !important;
   left: 0;
   top: 0;
   overflow: hidden;
-  background: #fff;
+  background: #f01;
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   -webkit-box-orient: horizontal;
   z-index: -1;
-  opacity: 0; }
-  .zmiti-main-ui.show {
-    z-index: 90;
-    opacity: 1; }
-  .zmiti-main-ui .zmiti-frame-C {
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 100vh !important;
-    z-index: 9999002;
-    width: 100vw !important;
-    background: #fff; }
-    .zmiti-main-ui .zmiti-frame-C iframe {
-      width: 100vw;
-      border: 1px solid transparent;
-      left: 0;
-      top: 0;
-      position: relative;
-      overflow: hidden;
-      height: 100vh;
-      padding: 0;
-      margin: 0; }
-    .zmiti-main-ui .zmiti-frame-C .zmiti-back {
-      position: fixed;
-      z-index: 1001;
-      right: 160px;
-      bottom: 260px;
-      width: 200px;
-      height: 200px; }
+  opacity: 0;
+}
+
+.zmiti-main-ui.android {
+  position: fixed !important;
+}
+
+.zmiti-main-ui.show {
+  z-index: 90;
+  opacity: 1;
+}
+
+.zmiti-main-ui .zmiti-frame-C {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh !important;
+  z-index: 9999002;
+  width: 10rem !important;
+  background: #fff;
+}
+
+.zmiti-main-ui .zmiti-frame-C iframe {
+  width: 10rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.zmiti-main-ui .zmiti-frame-C .zmiti-back {
+  position: fixed;
+  z-index: 1001;
+  left: 8.5rem;
+  bottom: .5rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
 
 @-webkit-keyframes info {
   from {
-    -webkit-transform: translate3d(0, -30px, 0); }
+    -webkit-transform: translate3d(0, -30px, 0);
+  }
   to {
-    -webkit-transform: translate3d(0, 0, 0); } }
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
 @-webkit-keyframes waiting {
   to {
-    -webkit-transform: rotate(360deg); } }
-
-/*# sourceMappingURL=index.css.map */
+    -webkit-transform: rotate(360deg);
+  }
+}

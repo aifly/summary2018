@@ -2,7 +2,7 @@
 	<transition name='index'>
 		<div v-if='show' class="lt-full zmiti-index-main-ui " >
 			<div class='lt-full' ref='page' >
-				<div style='padding-bottom:90px'>
+				<div style='padding-bottom:1.6rem'>
 					<div class='zmiti-banner'>
 						<img :src="imgs.banner" alt="">
 					</div>
@@ -18,8 +18,8 @@
 									<a href="javascript:void(0)"  v-tap='[showFrame,item.subhref || item.bannerList[0].href]'><img :src="item.subimg" alt=""></a>
 								</div>
 								<div ref='banners'>
-									<ul :style="{width:item.bannerList.length<=1?'1220px':item.bannerList.length*420+'px'}">
-										<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'1220px':400+'px'}">
+									<ul :style="{width:item.bannerList.length<=1?'9.6rem':item.bannerList.length*3.2+'rem'}">
+										<li v-for="(banner,k) in item.bannerList" :key="k" :style="{width:item.bannerList.length<=1?'9.6rem':'3rem'}">
 											<a :href=" banner.type === 'redirect' ? banner.href :'javascript:void(0)'" v-tap='[showFrame,banner.href,banner.type]'>
 												<img :src="banner.img" alt="">
 												<span class='zmiti-banner-item-content zmiti-text-overflow' v-if='false'>
@@ -108,7 +108,11 @@
 					window.location.href = href;
 					return;
 				}
-				///document.head.removeChild(document.getElementById('viewport'));
+				var viewport =document.getElementById('viewport');
+				if(viewport){
+
+					///document.head.removeChild(viewport);
+				}
 				this.obserable.trigger({
 					type:"toggleMain",
 					data:{

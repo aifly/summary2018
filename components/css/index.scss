@@ -20,13 +20,12 @@ html, body {
 
 body {
 	font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
-	font-size: 50px;
+	font-size: 14px;
 
 	&>div {
 	}
 
 }
-$viewW:1242px;
 img {
 	border: none;
 	vertical-align: middle;
@@ -39,18 +38,23 @@ img {
 	//@include transform(scale(1.2));
 	@include pos(f);
 
-	width: $viewW !important;
-	left: 50% !important;
-	margin-left: -$viewW/2;;
+	width: 100% !important;
+	height: 100vh;
+	left: 0% !important;
+	background:#158ae4;
 
-	.zmiti-loading-ui {
+	.zmiti-loading-ui1 {
 		width: 6rem;
 		left: 2rem;
 		@include pos(a);
 		top: 6rem;
 
+		font-size:1.5rem;
+
 		a {
+			
 			text-align: center;
+			@include transform(scale(1.2));
 			line-height: 200px;
 			color: #fff;
 			display: block;
@@ -63,7 +67,7 @@ img {
 			margin: -100px 0 0 -100px;
 
 			.zmiti-head {
-				$size: 100px;
+				$size: 80px;
 				width: $size;
 				height: $size;
 				@include br(50%);
@@ -77,7 +81,7 @@ img {
 			.zmiti-progress {
 				width: 100%;
 				@include pos(r);
-				z-index: 10;
+				z-index: 100;
 				top: 90px;
 			}
 
@@ -313,7 +317,8 @@ img {
 			text-align: center;
 			color: #fff;
 			font-family: Georgia;
-			font-size: .5rem;
+			font-size: .6rem;
+			
 		}
 
 	}

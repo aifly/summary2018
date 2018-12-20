@@ -1,7 +1,7 @@
 <template>
 	<transition name='main'>
-		<div class='zmiti-main-ui lt-full' :class="{'show':show}" >
-			<div v-if='href' class='zmiti-frame-C lt-full'>
+		<div class='zmiti-main-ui lt-full' :class="{'show':show,'android':isAndroid}"  >
+			<div v-if='href' class='zmiti-frame-C lt-full' >
 				<iframe  :src="href" frameborder="0" class=''></iframe>
 				<div class='zmiti-back' v-tap='[hideFrame]'>
 					<img :src="imgs.back" alt="">
@@ -29,6 +29,7 @@
 			return {
 				href:'',
 				imgs,
+				isAndroid:true,
 				show:false
 			}
 		},
@@ -44,7 +45,8 @@
 				//document.head.appendChild(viewport);
 				this.href = '';
 				this.show =false;
-			}
+			},
+			
 		
 			
 		},
@@ -59,7 +61,11 @@
 				this.href = data.href;
 			});
 
+			this.isAndroid = /android/.test(navigator.userAgent.toLowerCase());
 
+			
+
+			
 			
 		}
 	

@@ -988,7 +988,7 @@ window.config = {
       likeCount: 0,
       commentCount: 512,
       faces: new Array(15),
-      title: "改变中国 影响世界的40年的数据视频",
+      title: "改变中国 影响世界的40年",
       bannerList: [
         {
           img: imgs.gaibian,
