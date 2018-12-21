@@ -48,6 +48,8 @@
   liusheng7: "./assets/images/liusheng7.jpg",
   liusheng8: "./assets/images/liusheng8.jpg",
   liusheng9: "./assets/images/liusheng10.jpg",
+  //liusheng11: "./assets/images/liusheng11.jpg",
+  liusheng12: "./assets/images/liusheng12.jpg",
   yuanquan: "./assets/images/yuanquan.jpg",
   rmxy: "./assets/images/rmxy.jpg",
   tongkuang: "./assets/images/tongkuang.jpg",
@@ -66,7 +68,7 @@
   xinxian: "./assets/images/xinxian.jpg",
   luopan: "./assets/images/luopan.jpg",
   jinian: "./assets/images/jinian.jpg",
-  huida: "./assets/images/huida.jpg",
+  chongqing: "./assets/images/chongqing.jpg",
   shouhui: "./assets/images/shouhui.jpg",
   yigezi: "./assets/images/yigezi.jpg",
   fasheng: "./assets/images/fasheng.jpg",
@@ -262,6 +264,18 @@ window.config = {
           href:
             window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5247845?isview=1&homeshow=1",
           title: "哎呀，怎么就火了呢？"
+        },
+        /*{
+          //img: imgs.liusheng11,
+          href:
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5214765?isview=1&homeshow=1",
+          title: "点亮心灯|AR体验40年感恩历程"
+        },*/
+        {
+          img: imgs.liusheng12,
+          href:
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5219540?isview=1&homeshow=1",
+          title: "刚刚，TA和我说了一个从未公开的人生故事"
         }
       ],
       commentList: [
@@ -301,6 +315,32 @@ window.config = {
         {
           username: "山村野夫",
           title: "小时候的愿望是当一名医生，现在已经穿上白大褂了"
+        }
+      ]
+    },
+    {
+      date: "12月17日",
+      likeCount: 0,
+      commentCount: 178,
+      faces: new Array(15),
+      title: "这是一部大片！",
+      bannerList: [
+        {
+          img: imgs.liuye,
+          href:
+            window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5294846?isview=1&homeshow=1",
+          title: "这是一部大片！主角是刘烨，也是你们 "
+        }
+      ],
+      commentList: [
+        {
+          username: "MH",
+          title:
+            "我和你音乐响起，莫名留下了眼泪。零八奥运，我是孩童，十年时间，又翻了新天地。"
+        },
+        {
+          username: "大萌神呀~",
+          title: "终于等到揭晓答案了，前排观影。"
         }
       ]
     },
@@ -402,36 +442,7 @@ window.config = {
         }
       ]
     },
-    /* {
-      date: "12月17日", //6
-      likeCount: 0,
-      commentCount: 631,
-      faces: new Array(15),
-      title:"框住你的心",
-      bannerList: [
-        {
-          img: imgs.tongkuang,
-          href: window.location.protocol+"//mp.weixin.qq.com/s/0WSGDyDcvr5dCKiVFJWByA",
-          type: 'redirect',
-          title: "你来啊！来了我就框住你的心！ "
-        }
-      ],
-      commentList: [
-        {
-          username: "轩轩",
-          title: "快来关注新华社，要特别快，不然框不住你的心。"
-        },
-        {
-          username: "Xf XF",
-          title:
-            "虽然仅仅90后，但从小到大看着祖国一天天变好变强，无比自豪！我们要与时代同框，记录这最美好的时代！我爱你祖国！"
-        },
-        {
-          username: "文岩",
-          title: "我把我的靓照P进你们这个框里，我是不是太聪明了"
-        }
-      ]
-    }, */
+    /* */
     {
       date: "12月17日", //13
       likeCount: 0,
@@ -452,7 +463,38 @@ window.config = {
           title: "我有点儿宽，需要一个大框框昂"
         }
       ]
-    }, {
+    },
+     {
+      date: "12月17日", //6
+      likeCount: 0,
+      commentCount: 631,
+      faces: new Array(15),
+      title:"框住你的心",
+      bannerList: [
+        {
+          img: imgs.tongkuang,
+          href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5366185?isview=1&homeshow=1",
+          type: 'redirect',
+          title: "你来啊！来了我就框住你的心！ "
+        }
+      ],
+      commentList: [
+        {
+          username: "轩轩",
+          title: "快来关注新华社，要特别快，不然框不住你的心。"
+        },
+        {
+          username: "Xf XF",
+          title:
+            "虽然仅仅90后，但从小到大看着祖国一天天变好变强，无比自豪！我们要与时代同框，记录这最美好的时代！我爱你祖国！"
+        },
+        {
+          username: "文岩",
+          title: "我把我的靓照P进你们这个框里，我是不是太聪明了"
+        }
+      ]
+    },
+     {
       date: "12月17日", //13
       likeCount: 0,
       commentCount: 300,
@@ -489,6 +531,28 @@ window.config = {
           username:"神仙小猪",
           title:"这个很牛呀，黑科技，给新华社和百度AI点赞！"
          }
+      ]
+    },
+    {
+      date: "12月17日", //13
+      likeCount: 0,
+      commentCount: 300,
+      faces: new Array(15),
+      title: "来……来了！",
+      bannerList: [{
+        img: imgs.yifu,
+        href: window.location.protocol + "//xhpfmapi.zhongguowangshi.com/vh512/share/5366247?isview=1&homeshow=1",
+        title: "来……来了！"
+      }],
+      commentList: [
+       {
+          username: "不忘初心&一味做自己",
+          title: "我有故事，你有酒吗？"
+        },
+        {
+          username: "茂华",
+          title: "我就想知道，照片中塗鸦的字儿是谁写的？哈哈哈"
+        }
       ]
     },
     {
@@ -537,6 +601,35 @@ window.config = {
         }
       ]
     },
+     {
+        date: "12月17日", //25
+        likeCount: 200,
+        commentCount: 300,
+        faces: new Array(15),
+        title: "寻找“你”“我”的故事",
+        bannerList: [
+          {
+            img: imgs.luopan,
+            href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5366144?isview=1&homeshow=1",
+            title: "在岁月罗盘中，寻找“你”“我”的故事"
+          }
+        ],
+        commentList:[
+          {
+            username: "SAgP",
+            title: "岁月罗盘，快带我回到过去吧"
+          },
+          {
+            username: "刘锋",
+            title: "人生就是一场精彩纷呈舞台，让你发挥表演"
+          },
+          {
+            username: "LZ仁",
+            title: "岁月的罗盘，承载了几代人的艰辛与希望、奋斗与輝煌的历史回望！"
+          }
+
+        ]
+      },
     {
       date: "12月17日", //9
       likeCount: 0,
@@ -587,6 +680,33 @@ window.config = {
         }
       ]
     },
+   {
+      date: "12月17日", //23
+      likeCount: 200,
+      commentCount: 300,
+      faces: new Array(15),
+      title: "这就是1978的回答！",
+      bannerList: [
+        {
+          img: imgs.chongqing,
+          href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5366368?isview=1&homeshow=1",
+          title: "这就是1978的回答！"
+        }
+      ],
+      commentList: [
+        {
+          username:'SAM',
+          title:"物质匮乏的年代，对生活的美好想象，还停留在外公的一碗臊子饭里。"
+        },{
+          username:"有你是幸福",
+          title:"1978年出生的我，四十岁了"
+        },
+        {
+          username:"朱杰",
+          title:"今天！40年！ 将改革进行到底！"
+        }
+      ]
+    },
     {
       date: "12月17日", //11
       likeCount: 0,
@@ -613,6 +733,36 @@ window.config = {
         }
       ]
     },
+    {
+        date: "12月17日", //26
+        likeCount: 200,
+        commentCount: 300,
+        faces: new Array(15),
+        title: "这风景，值得你好好看看",
+        bannerList: [
+          {
+            img: imgs.fengjing,
+            href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5366296?isview=1&homeshow=1",
+            title: "这33米的风景，值得你好好看看"
+          }
+        ],
+        commentList: [
+          {
+            username: "喜欢欣赏",
+            title:
+              " 综上所述这33米的风景，展现大美中国，进化中的人文之美……一起来感受一下吧！值得好好看看～"
+          },
+          {
+            username: "小苹果",
+            title: "人在画中走  景在屏中游"
+          },
+          {
+            username: "八喜",
+            title:
+              "你不说，我真不知道。以前，只知道日新月异，现在，看到了争分夺秒"
+          }
+        ]
+      },
     {
       date: "12月17日", //12
       likeCount: 0,
@@ -717,6 +867,35 @@ window.config = {
       ],
       commentList: []
     },
+    {
+        date: "12月17日", //45
+        likeCount: 200,
+        commentCount: 300,
+        faces: new Array(15),
+        title: "帮个忙，请你@这个人",
+        bannerList: [
+          {
+            img: imgs.bangmang,
+            href: window.location.protocol+"//xhpfmapi.zhongguowangshi.com/vh512/share/5369481?isview=1&homeshow=1",
+            title: "帮个忙，请你@这个人"
+          }
+        ],
+        commentList: [
+          {
+            username: "茄丫茄丫茄",
+            title:
+              "@我的家人，感谢你们一直健健康康地陪伴我身边25年...希望再更多的35/45/55...你们都健康~~"
+          },
+          {
+            username: "Elisha",
+            title: "一定是特别的缘分，才一路走来成为了一家人"
+          },
+          {
+            username: "WAN",
+            title: "@我的祖国母亲"
+          }
+        ]
+      },
     {
       date: "12月17日", //20
       likeCount: 0,
