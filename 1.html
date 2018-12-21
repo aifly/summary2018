@@ -59,9 +59,27 @@
 </head>
 
 <body>
-	<div id='app'>
-        <iframe id='iframe' scrolling='no'  src='https://xhpfmapi.zhongguowangshi.com/vh512/share/5081743?isview=1&homeshow=1' frameborder='0'>
+	<div id='app' style='display:none'>
     </div>
+	<div>
+		中华人民共和国
+	</div>
+	<script src='./assets/js/vconsole.min.js'></script>
+	<script>
+		window.vConsole = new window.VConsole({
+			defaultPlugins: ['system', 'network', 'element', 'storage'], // 可以在此设定要默认加载的面板
+			maxLogNumber: 1000,
+			// disableLogScrolling: true,
+			onReady: function() {
+				console.log('vConsole is ready.');
+			},
+			onClearLog: function() {
+				console.log('on clearLog');
+			}
+		});
+
+		console.log({a:123,b:1246234,name:'xuchang'});
+	</script>
  
 </body>
 
